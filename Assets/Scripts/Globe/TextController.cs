@@ -16,7 +16,6 @@ public class TextController : MonoBehaviour
         "Oceania"
     };
     private static List<string> usedContinents = new List<string>();
-    private int index;
     private System.Random rnd = new System.Random();
     private string[] pos_messages = new string[] { "Nice", "Good One", "On fire!" };
     private int pos_streak;
@@ -29,7 +28,8 @@ public class TextController : MonoBehaviour
         selftmp = this.GetComponent<TMP_Text>();
 
         //choose a random continent and display it 
-        index = rnd.Next(continents.Count);
+        int index = rnd.Next(continents.Count);
+        usedContinents.Add(continents[index]);
         selftmp.text = continents[index];
     }
     
@@ -45,22 +45,21 @@ public class TextController : MonoBehaviour
         selftmp.text = continents[index];
     }
 
-    public IEnumerator GoodAnswer(Continent c)
+    public IEnumerator GoodAnswer()
     {
         
         //Custom messages depending on the positive streak
         selftmp.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];
         neg_streak = 0;
         pos_streak++;
-        ContiController.DisableButtons();
+        ContsController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        ContiController.EnableButtons();
+        ContsController.ResetRed();
+        ContsController.EnableWhite();
         this.AskContinent();
-        c.Disable();
-        ContiController.ResetRedButtons();
     }
 
-    public IEnumerator IncorrectAnswer(Continent c)
+    public IEnumerator IncorrectAnswer()
     {
         string current_answer = selftmp.text;
         //Custom messages depending on the negative streak
@@ -72,20 +71,19 @@ public class TextController : MonoBehaviour
         }
         neg_streak++;
         pos_streak = 0;
-        ContiController.DisableButtons();
+        ContsController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        ContiController.EnableButtons();
-        c.Disable();
+        ContsController.EnableWhite();
         selftmp.text = current_answer;
     }
     public IEnumerator Completed()
     {
         selftmp.text = "Great Jobbb";
-        ContiController.DisableButtons();
+        ContsController.DisableAll();
         yield return new WaitForSeconds(1.5f);
         this.AskContinent();
-        ContiController.EnableButtons();
-        ContiController.ResetAllButtons();
+        ContsController.EnableAll();
+        ContsController.ResetAll();
     }
 
     public static bool CompleteCheck()

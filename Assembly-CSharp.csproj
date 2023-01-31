@@ -39,7 +39,7 @@
      <Compile Include="Assets\Scripts\Globe\Continent.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Objects\InteractableObject.cs" />
-     <Compile Include="Assets\Scripts\Globe\ContiController.cs" />
+     <Compile Include="Assets\Scripts\Globe\ContsController.cs" />
      <Compile Include="Assets\Scripts\Globe\TextController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ContiController
+public static class ContsController
 {
     static private List<Continent> ContiList = new List<Continent>();
 
@@ -13,29 +13,42 @@ public static class ContiController
     }
 
     //To Notify all other buttons that one has been pressed
-    public static void ResetAllButtons()
+    public static void ResetRed()
     {
         foreach (Continent c in ContiList){
-            c.ResetAll();
+            if(c.GetState() == Continent.ImgColor.Red){
+                c.Reset();
+            }
         } 
     }
 
-    public static void ResetRedButtons()
+    public static void ResetAll()
     {
         foreach (Continent c in ContiList){
-            c.ResetRed();
+            c.Reset();
         } 
     }
 
-    public static void DisableButtons(){
+    public static void DisableAll()
+    {
         foreach (Continent c in ContiList){
             c.Disable();
         } 
     }
 
-    public static void EnableButtons(){
+    public static void EnableAll()
+    {
         foreach (Continent c in ContiList){
             c.Enable();
+        } 
+    }
+
+    public static void EnableWhite()
+    {
+        foreach (Continent c in ContiList){
+            if(c.GetState() == Continent.ImgColor.White){
+                c.Enable();
+            }
         } 
     }
 }
