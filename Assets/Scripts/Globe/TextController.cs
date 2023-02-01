@@ -5,17 +5,8 @@ using TMPro;
 public class TextController : MonoBehaviour
 {
     private TMP_Text selftmp;
-    private static List<string> continents = new List<string>()
-    {
-        "Asia",
-        "Europe",
-        "Africa",
-        "Antartica",
-        "North America",
-        "South America",
-        "Oceania"
-    };
-    private static List<string> usedContinents = new List<string>();
+    private List<string> pieces = new List<string>();
+    private List<string> usedPieces = new List<string>();
     private System.Random rnd = new System.Random();
     private string[] pos_messages = new string[] { "Nice", "Good One", "On fire!" };
     private int pos_streak;
@@ -26,23 +17,20 @@ public class TextController : MonoBehaviour
     void Start()
     {
         selftmp = this.GetComponent<TMP_Text>();
-
-        //choose a random continent and display it 
-        int index = rnd.Next(continents.Count);
-        usedContinents.Add(continents[index]);
-        selftmp.text = continents[index];
+        //We need to wait for all the buttons get passed to the controller
+        StartCoroutine(SetUp());
     }
     
 
-    public void AskContinent()
+    public void AskPiece()
     {
-        int index = rnd.Next(continents.Count);
-        while (usedContinents.Contains(continents[index]))
+        int index = rnd.Next(pieces.Count);
+        while (usedPieces.Contains(pieces[index]))
         {
-            index = rnd.Next(continents.Count);
+            index = rnd.Next(pieces.Count);
         }
-        usedContinents.Add(continents[index]);
-        selftmp.text = continents[index];
+        usedPieces.Add(pieces[index]);
+        selftmp.text = pieces[index];
     }
 
     public IEnumerator GoodAnswer()
@@ -52,18 +40,18 @@ public class TextController : MonoBehaviour
         selftmp.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];
         neg_streak = 0;
         pos_streak++;
-        ContsController.DisableAll();
+        PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        ContsController.ResetRed();
-        ContsController.EnableWhite();
-        this.AskContinent();
+        PieceController.ResetRed();
+        PieceController.EnableWhite();
+        AskPiece();
     }
 
     public IEnumerator IncorrectAnswer()
     {
         string current_answer = selftmp.text;
         //Custom messages depending on the negative streak
-        if(neg_streak == 5)
+        if(neg_streak == 6)
         {
             selftmp.text = "The lasttt";
         }else{
@@ -71,29 +59,39 @@ public class TextController : MonoBehaviour
         }
         neg_streak++;
         pos_streak = 0;
-        ContsController.DisableAll();
+        PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        ContsController.EnableWhite();
+        PieceController.EnableWhite();
         selftmp.text = current_answer;
     }
     public IEnumerator Completed()
     {
         selftmp.text = "Great Jobbb";
-        ContsController.DisableAll();
+        PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        this.AskContinent();
-        ContsController.EnableAll();
-        ContsController.ResetAll();
+        AskPiece();
+        PieceController.EnableAll();
+        PieceController.ResetAll();
     }
 
-    public static bool CompleteCheck()
+    public bool CompleteCheck()
     {
-        if (usedContinents.Count == continents.Count){
-            usedContinents.Clear();
+        if (usedPieces.Count == pieces.Count){
+            usedPieces.Clear();
             return true;
         }
         return false;
     }
+
+    private IEnumerator SetUp()
+    {
+        selftmp.text = "Welcome";
+        yield return new WaitForSeconds(1f);
+        pieces = PieceController.GetNames();
+        AskPiece();
+        PieceController.EnableAll();
+    }
+
     public string GetText()
     {
         return selftmp.text;
@@ -101,6 +99,6 @@ public class TextController : MonoBehaviour
 
     public List<string> GetUsedCont()
     {
-        return usedContinents;
+        return usedPieces;
     }
 }
