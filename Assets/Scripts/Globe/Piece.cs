@@ -10,7 +10,7 @@ public class Piece : MonoBehaviour
     private string answer;
     private Image selfimage;
     private Button selfbut;
-    public enum ImgColor {Red, Green, White}
+    public enum ImgColor {White, Green, Red, Yellow, Gray}
     private ImgColor currentIC;
 
     void Start()
@@ -32,8 +32,19 @@ public class Piece : MonoBehaviour
         //if button clicked has the same name as the text do
         if(this.name.Equals(controlText.GetText())){
             //turn the image green
-            selfimage.color = new Vector4(0f, 1f, 0f, 1f);
-            currentIC = ImgColor.Green;
+            int neg_streak = controlText.GetNegStreak();
+            if(neg_streak == 0)
+            {
+                selfimage.color = new Vector4(0f, 1f, 0f, 1f);
+                currentIC = ImgColor.Green;
+            }else if(neg_streak != 7 - controlText.GetUsedCount())
+            {
+                selfimage.color = new Vector4(1f, 0.92f, 0.016f, 1f);
+                currentIC = ImgColor.Yellow;
+            }else{
+                selfimage.color = new Vector4(0.5f, 0.5f, 0.5f, 1f);
+                currentIC = ImgColor.Gray;
+            }
             if(controlText.CompleteCheck())
             {
                 StartCoroutine(controlText.Completed());
