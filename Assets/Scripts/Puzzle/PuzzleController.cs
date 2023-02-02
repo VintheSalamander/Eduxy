@@ -27,6 +27,13 @@ public class PuzzleController
             p.Disable();
         } 
     }
+    public static void DisableRest(Puzzle notdis)
+    {
+        foreach (Puzzle p in PuzzleList){
+            if(p != notdis)
+                p.Disable();
+        } 
+    }
 
     public static void EnableAll()
     {

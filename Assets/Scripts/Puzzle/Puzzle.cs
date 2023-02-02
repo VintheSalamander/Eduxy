@@ -7,6 +7,7 @@ using TMPro;
 
 public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
+    private RectTransform rectTransform;
     private Vector2 pos;
     public PuzTxtController Panel;
     public TMP_Text selfText;
@@ -18,6 +19,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     {
         selfImage = this.GetComponent<Image>();
         selfBut = this.GetComponent<Button>();
+        rectTransform = this.GetComponent<RectTransform>();
         selfText = selfText.GetComponent<TMP_Text>();
         this.Disable();
         //custom hit area for the Button
@@ -31,17 +33,22 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     
     public void OnDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        PuzzleController.DisableRest(this);
+        Vector3 position = eventData.position;
+        var canvas = selfImage.canvas;
+        position.z = canvas.planeDistance;
+        selfImage.transform.position = canvas.worldCamera.ScreenToWorldPoint(position);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        selfImage.color = new Vector4(1f, 1f, 1f, 0.5f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        selfImage.color = new Vector4(1f, 1f, 1f, 1f);
+        PuzzleController.EnableAll();
     }
 
     public void Spawn()
@@ -55,12 +62,12 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
         if(this.name.Equals(Panel.GetText())){
             if(Panel.CompleteCheck())
             {
-                StartCoroutine(Panel.Completed());
+                //StartCoroutine(Panel.Completed());
             }else{
-                StartCoroutine(Panel.GoodAnswer());
+                //StartCoroutine(Panel.GoodAnswer());
             }
         }else{
-            StartCoroutine(Panel.IncorrectAnswer());
+            //StartCoroutine(Panel.IncorrectAnswer());
         }
     }
 

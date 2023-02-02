@@ -38,15 +38,18 @@ public class Piece : MonoBehaviour
     {
         //if Button clicked has the same name as the text do
         if(this.name.Equals(Panel.GetText())){
-            //turn the image green
             int neg_streak = Panel.GetNegStreak();
+            //turn the image green if guessed the first time, yellow if guessed the next times but
+            //if guessed as last option turn the image orange 
             if(neg_streak == 0)
-            {
+            { 
+                //turn the image green
                 selfImage.color = new Vector4(0f, 1f, 0f, 1f);
-            }else if(neg_streak != 7 - Panel.GetUsedCount())
-            {
+            }else if(neg_streak != 7 - Panel.GetUsedCount()){
+                //turn the image yellow
                 selfImage.color = new Vector4(1f, 0.92f, 0.016f, 1f);
             }else{
+                //turn the image orange
                 selfImage.color = new Vector4(1f, 0.5f, 0f, 1f);
             }
             currentIC = ImgColor.GYO;
@@ -72,6 +75,7 @@ public class Piece : MonoBehaviour
 
     public void Reset()
     {
+        //turn image back to normal by applying white
         selfImage.color = new Vector4(1f, 1f, 1f, 1f);
         currentIC = ImgColor.White;
     }
