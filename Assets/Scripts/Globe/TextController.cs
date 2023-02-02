@@ -4,8 +4,8 @@ using UnityEngine;
 using TMPro;
 public class TextController : MonoBehaviour
 {
-    public TMP_Text AskText;
-    public TMP_Text FeedbackText;
+    public TMP_Text askText;
+    public TMP_Text feedbackText;
     private List<string> pieces = new List<string>();
     private List<string> usedPieces = new List<string>();
     private System.Random rnd = new System.Random();
@@ -18,8 +18,8 @@ public class TextController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AskText = AskText.GetComponent<TMP_Text>();
-        FeedbackText = FeedbackText.GetComponent<TMP_Text>();
+        askText = askText.GetComponent<TMP_Text>();
+        feedbackText = feedbackText.GetComponent<TMP_Text>();
         pos_streak = 0;
         neg_streak = 0;
         thelast = false;
@@ -36,7 +36,7 @@ public class TextController : MonoBehaviour
             index = rnd.Next(pieces.Count);
         }
         usedPieces.Add(pieces[index]);
-        AskText.text = pieces[index];
+        askText.text = pieces[index];
     }
 
     public IEnumerator GoodAnswer()
@@ -44,10 +44,10 @@ public class TextController : MonoBehaviour
         
         //Custom messages depending on the positive streak
         if(!thelast){
-            FeedbackText.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];            
+            feedbackText.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];            
             pos_streak++;
         }else{
-            FeedbackText.text = "Next time!";
+            feedbackText.text = "Next time!";
         }
         thelast = false;
         neg_streak = 0;
@@ -65,10 +65,10 @@ public class TextController : MonoBehaviour
         //Custom messages depending on the negative streak
         if(neg_streak == 7 - usedPieces.Count)
         {
-            FeedbackText.text = "The lasttt";
+            feedbackText.text = "The lasttt";
             thelast = true;
         }else{
-            FeedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
+            feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
         }
         PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
@@ -76,7 +76,7 @@ public class TextController : MonoBehaviour
     }
     public IEnumerator Completed()
     {
-        FeedbackText.text = "Great Jobbb";
+        feedbackText.text = "Great Jobbb";
         PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
         AskPiece();
@@ -95,18 +95,18 @@ public class TextController : MonoBehaviour
 
     private IEnumerator SetUp()
     {
-        AskText.text = "Continent";
-        FeedbackText.text = "Welcome";
+        askText.text = "Continent";
+        feedbackText.text = "Welcome";
         yield return new WaitForSeconds(1.5f);
         pieces = PieceController.GetNames();
         AskPiece();
         PieceController.EnableAll();
-        FeedbackText.text = "Choose one";
+        feedbackText.text = "Choose one";
     }
 
     public string GetText()
     {
-        return AskText.text;
+        return askText.text;
     }
 
     public int GetNegStreak()

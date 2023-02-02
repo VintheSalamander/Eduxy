@@ -7,6 +7,7 @@ using TMPro;
 public class Piece : MonoBehaviour
 {
     public TextController Panel;
+    public TMP_Text selfText;
     private string answer;
     private Image selfimage;
     private Button selfbut;
@@ -20,6 +21,7 @@ public class Piece : MonoBehaviour
     {
         selfimage = this.GetComponent<Image>();
         selfbut = this.GetComponent<Button>();
+        selfText = selfText.GetComponent<TMP_Text>();
         this.Disable();
         currentIC = ImgColor.White;
         //custom hit area for the button
@@ -28,6 +30,7 @@ public class Piece : MonoBehaviour
         selfbut.onClick.AddListener(OnClick);
         //store the piece asked
         PieceController.AddPiece(this);
+        selfText.text = selfbut.name;
     }
 
     void OnClick()
