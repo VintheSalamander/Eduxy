@@ -59,4 +59,11 @@ public static class PieceController
             }
         } 
     }
+
+    public static void HideAllTxt()
+    {
+        foreach (Piece p in PieceList){
+            p.HideText();
+        } 
+    }
 }

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class TextController : MonoBehaviour
+public class PuzTxtController : MonoBehaviour
 {
     public TMP_Text askText;
     public TMP_Text feedbackText;
-    private List<string> pieces = new List<string>();
-    private List<string> usedPieces = new List<string>();
+    private List<string> puzzles = new List<string>();
+    private List<string> usedPuzzles = new List<string>();
     private System.Random rnd = new System.Random();
     private string[] pos_messages = new string[] { "Nice", "Good One", "On fire!" };
     private int pos_streak;
@@ -28,15 +28,15 @@ public class TextController : MonoBehaviour
     }
     
 
-    public void AskPiece()
+    public void AskPuzzle()
     {
-        int index = rnd.Next(pieces.Count);
-        while (usedPieces.Contains(pieces[index]))
+        int index = rnd.Next(puzzles.Count);
+        while (usedPuzzles.Contains(puzzles[index]))
         {
-            index = rnd.Next(pieces.Count);
+            index = rnd.Next(puzzles.Count);
         }
-        usedPieces.Add(pieces[index]);
-        askText.text = pieces[index];
+        usedPuzzles.Add(puzzles[index]);
+        askText.text = puzzles[index];
     }
 
     public IEnumerator GoodAnswer()
@@ -51,11 +51,9 @@ public class TextController : MonoBehaviour
         }
         thelast = false;
         neg_streak = 0;
-        PieceController.DisableAll();
+        PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        PieceController.ResetRed();
-        PieceController.EnableWhite();
-        AskPiece();
+        AskPuzzle();
     }
 
     public IEnumerator IncorrectAnswer()
@@ -63,32 +61,31 @@ public class TextController : MonoBehaviour
         neg_streak++;
         pos_streak = 0;
         //Custom messages depending on the negative streak
-        if(neg_streak == 7 - usedPieces.Count)
+        if(neg_streak == 7 - usedPuzzles.Count)
         {
             feedbackText.text = "The lasttt";
             thelast = true;
         }else{
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
         }
-        PieceController.DisableAll();
+        PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        PieceController.EnableWhite();
     }
     public IEnumerator Completed()
     {
         feedbackText.text = "Great Jobbb";
-        PieceController.DisableAll();
+        PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        AskPiece();
-        PieceController.HideAllTxt();
-        PieceController.ResetAll();
-        PieceController.EnableAll();
+        AskPuzzle();
+        PuzzleController.HideAllTxt();
+        PuzzleController.RespawnAll();
+        PuzzleController.EnableAll();
     }
 
     public bool CompleteCheck()
     {
-        if (usedPieces.Count == pieces.Count){
-            usedPieces.Clear();
+        if (usedPuzzles.Count == puzzles.Count){
+            usedPuzzles.Clear();
             return true;
         }
         return false;
@@ -99,10 +96,10 @@ public class TextController : MonoBehaviour
         askText.text = "Continent";
         feedbackText.text = "Welcome";
         yield return new WaitForSeconds(3f);
-        pieces = PieceController.GetNames();
-        AskPiece();
-        PieceController.HideAllTxt();
-        PieceController.EnableAll();
+        puzzles = PuzzleController.GetNames();
+        AskPuzzle();
+        PuzzleController.HideAllTxt();
+        PuzzleController.EnableAll();
         feedbackText.text = "Choose one";
     }
 
@@ -118,6 +115,6 @@ public class TextController : MonoBehaviour
 
     public int GetUsedCount()
     {
-        return usedPieces.Count;
+        return usedPuzzles.Count;
     }
 }

@@ -41,6 +41,9 @@
      <Compile Include="Assets\Scripts\Objects\InteractableObject.cs" />
      <Compile Include="Assets\Scripts\Globe\PieceController.cs" />
      <Compile Include="Assets\Scripts\Globe\TextController.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\Puzzle.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\PuzzleController.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\PuzTxtController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

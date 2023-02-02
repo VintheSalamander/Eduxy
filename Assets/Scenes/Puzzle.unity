@@ -455,7 +455,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 671498974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b78e86e893942a4982e6a4a19990b26, type: 3}
+  m_Script: {fileID: 11500000, guid: 61a742f7bc6561041be951ffe4a67d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   askText: {fileID: 723081251}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 723081252}
   - component: {fileID: 723081251}
   m_Layer: 5
-  m_Name: Asktext
+  m_Name: Ask_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,7 +1586,7 @@ GameObject:
   - component: {fileID: 1602071139}
   - component: {fileID: 1602071138}
   - component: {fileID: 1602071137}
-  - component: {fileID: 1602071140}
+  - component: {fileID: 1602071141}
   m_Layer: 5
   m_Name: North America
   m_TagString: Untagged
@@ -1697,7 +1697,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602071135}
   m_CullTransparentMesh: 1
---- !u!114 &1602071140
+--- !u!114 &1602071141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602071135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 671498978}
@@ -2111,7 +2111,7 @@ GameObject:
   - component: {fileID: 708674272660618555}
   - component: {fileID: 708674272660618554}
   - component: {fileID: 708674272660618553}
-  - component: {fileID: 708674272660618552}
+  - component: {fileID: 708674272660618556}
   m_Layer: 5
   m_Name: Asia
   m_TagString: Untagged
@@ -2140,20 +2140,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.3100731, y: 1.5320388}
   m_SizeDelta: {x: 5.25, y: 3.875}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &708674272660618552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708674272660618550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 1134693135}
 --- !u!114 &708674272660618553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,6 +2222,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708674272660618550}
   m_CullTransparentMesh: 1
+--- !u!114 &708674272660618556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708674272660618550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 1134693135}
 --- !u!1 &1980143900719687378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2248,7 @@ GameObject:
   - component: {fileID: 1980143900719687383}
   - component: {fileID: 1980143900719687382}
   - component: {fileID: 1980143900719687381}
-  - component: {fileID: 1980143900719687380}
+  - component: {fileID: 1980143900719687384}
   m_Layer: 5
   m_Name: Africa
   m_TagString: Untagged
@@ -2277,20 +2277,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.24757293, y: 0.06328868}
   m_SizeDelta: {x: 3.25, y: 3.1875}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1980143900719687380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980143900719687378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 1024421687}
 --- !u!114 &1980143900719687381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2373,6 +2359,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980143900719687378}
   m_CullTransparentMesh: 1
+--- !u!114 &1980143900719687384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980143900719687378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 1024421687}
 --- !u!1 &3826459671256834852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,7 +2385,7 @@ GameObject:
   - component: {fileID: 3826459671256834857}
   - component: {fileID: 3826459671256834856}
   - component: {fileID: 3826459671256834855}
-  - component: {fileID: 3826459671256834854}
+  - component: {fileID: 3826459671256834858}
   m_Layer: 5
   m_Name: South America
   m_TagString: Untagged
@@ -2414,20 +2414,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2.877427, y: -0.93671143}
   m_SizeDelta: {x: 2.25, y: 2.9375}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3826459671256834854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826459671256834852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 904521006}
 --- !u!114 &3826459671256834855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,6 +2496,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826459671256834852}
   m_CullTransparentMesh: 1
+--- !u!114 &3826459671256834858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826459671256834852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 904521006}
 --- !u!1 &6320219986442122552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,7 +2522,7 @@ GameObject:
   - component: {fileID: 6320219986442122557}
   - component: {fileID: 6320219986442122556}
   - component: {fileID: 6320219986442122555}
-  - component: {fileID: 6320219986442122554}
+  - component: {fileID: 6320219986442122558}
   m_Layer: 5
   m_Name: Oceania
   m_TagString: Untagged
@@ -2551,20 +2551,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.3100734, y: -0.9992114}
   m_SizeDelta: {x: 2.625, y: 2.0625}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6320219986442122554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6320219986442122552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 182920231}
 --- !u!114 &6320219986442122555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2647,6 +2633,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6320219986442122552}
   m_CullTransparentMesh: 1
+--- !u!114 &6320219986442122558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320219986442122552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 182920231}
 --- !u!1 &6477446814873274302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2659,7 @@ GameObject:
   - component: {fileID: 6477446814873274307}
   - component: {fileID: 6477446814873274306}
   - component: {fileID: 6477446814873274305}
-  - component: {fileID: 6477446814873274304}
+  - component: {fileID: 6477446814873274308}
   m_Layer: 5
   m_Name: Europe
   m_TagString: Untagged
@@ -2688,20 +2688,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.21632293, y: 2.344539}
   m_SizeDelta: {x: 3.1875, y: 2.125}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6477446814873274304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6477446814873274302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 1448230698}
 --- !u!114 &6477446814873274305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2784,6 +2770,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6477446814873274302}
   m_CullTransparentMesh: 1
+--- !u!114 &6477446814873274308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477446814873274302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 1448230698}
 --- !u!1 &7969441740834837774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,7 +2796,7 @@ GameObject:
   - component: {fileID: 7969441740834837779}
   - component: {fileID: 7969441740834837778}
   - component: {fileID: 7969441740834837777}
-  - component: {fileID: 7969441740834837776}
+  - component: {fileID: 7969441740834837780}
   m_Layer: 5
   m_Name: Antartica
   m_TagString: Untagged
@@ -2825,20 +2825,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.09132293, y: -2.8429615}
   m_SizeDelta: {x: 8.4375, y: 1.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7969441740834837776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7969441740834837774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d0a11b6e25c174c9c6378e300d674f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 671498978}
-  selfText: {fileID: 1301706923}
 --- !u!114 &7969441740834837777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2921,3 +2907,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7969441740834837774}
   m_CullTransparentMesh: 1
+--- !u!114 &7969441740834837780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969441740834837774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa532534225d340905b62edeefba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 671498978}
+  selfText: {fileID: 1301706923}
