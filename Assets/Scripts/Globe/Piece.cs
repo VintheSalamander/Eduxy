@@ -6,11 +6,14 @@ using TMPro;
 
 public class Piece : MonoBehaviour
 {
-    public TextController controlText;
+    public TextController Panel;
     private string answer;
     private Image selfimage;
     private Button selfbut;
-    public enum ImgColor {White, Green, Red, Yellow, Gray}
+
+    //White and Red are the relevant values needed for PieceController
+    //GYO represents when the piece is Green, Yellow or Orange, where tracking is no really needed 
+    public enum ImgColor {White, Red, GYO}
     private ImgColor currentIC;
 
     void Start()
@@ -30,30 +33,28 @@ public class Piece : MonoBehaviour
     void OnClick()
     {
         //if button clicked has the same name as the text do
-        if(this.name.Equals(controlText.GetText())){
+        if(this.name.Equals(Panel.GetText())){
             //turn the image green
-            int neg_streak = controlText.GetNegStreak();
+            int neg_streak = Panel.GetNegStreak();
             if(neg_streak == 0)
             {
                 selfimage.color = new Vector4(0f, 1f, 0f, 1f);
-                currentIC = ImgColor.Green;
-            }else if(neg_streak != 7 - controlText.GetUsedCount())
+            }else if(neg_streak != 7 - Panel.GetUsedCount())
             {
                 selfimage.color = new Vector4(1f, 0.92f, 0.016f, 1f);
-                currentIC = ImgColor.Yellow;
             }else{
-                selfimage.color = new Vector4(0.5f, 0.5f, 0.5f, 1f);
-                currentIC = ImgColor.Gray;
+                selfimage.color = new Vector4(1f, 0.5f, 0f, 1f);
             }
-            if(controlText.CompleteCheck())
+            currentIC = ImgColor.GYO;
+            if(Panel.CompleteCheck())
             {
-                StartCoroutine(controlText.Completed());
+                StartCoroutine(Panel.Completed());
             }else{
-                StartCoroutine(controlText.GoodAnswer());
-                answer = controlText.GetText();
+                StartCoroutine(Panel.GoodAnswer());
+                answer = Panel.GetText();
             }
         }else{
-            StartCoroutine(controlText.IncorrectAnswer());
+            StartCoroutine(Panel.IncorrectAnswer());
             //turn the image red
             selfimage.color = new Vector4(1f, 0f, 0f, 1f);
             currentIC = ImgColor.Red;
