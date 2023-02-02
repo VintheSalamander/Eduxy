@@ -27,7 +27,7 @@ public class PuzzleController
             p.Disable();
         } 
     }
-    public static void DisableRest(Puzzle notdis)
+    public static void DisableDefSpriteRest(Puzzle notdis)
     {
         foreach (Puzzle p in PuzzleList){
             if(p != notdis)
