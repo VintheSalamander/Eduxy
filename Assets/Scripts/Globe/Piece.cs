@@ -16,7 +16,6 @@ public class Piece : MonoBehaviour
     //GYO represents when the piece is Green, Yellow or Orange, where tracking is no really needed 
     public enum ImgColor {White, Red, GYO}
     private ImgColor currentIC;
-    private Sprite hilisprite;
     
     void Start()
     {
@@ -68,7 +67,6 @@ public class Piece : MonoBehaviour
             selfImage.color = new Vector4(1f, 0f, 0f, 1f);
             currentIC = ImgColor.Red;
         }
-        this.SetHiliSprite();
         selfImage = this.GetComponent<Image>();
     }
     
@@ -81,8 +79,6 @@ public class Piece : MonoBehaviour
         //turn image back to normal by applying white
         selfImage.color = new Vector4(1f, 1f, 1f, 1f);
         currentIC = ImgColor.White;
-        selfImage.sprite = selfBut.spriteState.disabledSprite;
-        selfImage = this.GetComponent<Image>();
     }
 
     public void Disable()
@@ -103,11 +99,5 @@ public class Piece : MonoBehaviour
     public void HideText()
     {
        selfText.gameObject.SetActive(false); 
-    }
-    
-    public void SetHiliSprite()
-    {
-        selfImage.sprite = selfBut.spriteState.highlightedSprite;
-        selfImage.SetAllDirty();
     }
 }
