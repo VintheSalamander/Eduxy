@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 public class PuzTxtController : MonoBehaviour
 {
-    public TMP_Text askText;
     public TMP_Text feedbackText;
     private List<string> puzzles = new List<string>();
     private List<string> usedPuzzles = new List<string>();
@@ -18,7 +17,6 @@ public class PuzTxtController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        askText = askText.GetComponent<TMP_Text>();
         feedbackText = feedbackText.GetComponent<TMP_Text>();
         pos_streak = 0;
         neg_streak = 0;
@@ -26,17 +24,18 @@ public class PuzTxtController : MonoBehaviour
         //We need to wait for all the buttons get passed to the controller
         StartCoroutine(SetUp());
     }
-    
 
-    public void AskPuzzle()
+    private IEnumerator SetUp()
     {
-        int index = rnd.Next(puzzles.Count);
-        while (usedPuzzles.Contains(puzzles[index]))
-        {
-            index = rnd.Next(puzzles.Count);
-        }
-        usedPuzzles.Add(puzzles[index]);
-        askText.text = puzzles[index];
+        //Here it iterates through the all puzzles pieces each call of PuzzleController
+        //as they are only a few items it does not matter complexity wise
+        feedbackText.text = "Welcome";
+        yield return new WaitForSeconds(0.01f);
+        PuzzleController.SpawnAll();
+        puzzles = PuzzleController.GetNames();
+        PuzzleController.HideAllTxt();
+        PuzzleController.EnableAll();
+        feedbackText.text = "Choose one";
     }
 
     public IEnumerator GoodAnswer()
@@ -53,7 +52,6 @@ public class PuzTxtController : MonoBehaviour
         neg_streak = 0;
         PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        AskPuzzle();
     }
 
     public IEnumerator IncorrectAnswer()
@@ -76,9 +74,8 @@ public class PuzTxtController : MonoBehaviour
         feedbackText.text = "Great Jobbb";
         PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        AskPuzzle();
         PuzzleController.HideAllTxt();
-        PuzzleController.RespawnAll();
+        PuzzleController.SpawnAll();
         PuzzleController.EnableAll();
     }
 
@@ -91,22 +88,6 @@ public class PuzTxtController : MonoBehaviour
         return false;
     }
 
-    private IEnumerator SetUp()
-    {
-        askText.text = "Continent";
-        feedbackText.text = "Welcome";
-        yield return new WaitForSeconds(3f);
-        puzzles = PuzzleController.GetNames();
-        AskPuzzle();
-        PuzzleController.HideAllTxt();
-        PuzzleController.EnableAll();
-        feedbackText.text = "Choose one";
-    }
-
-    public string GetText()
-    {
-        return askText.text;
-    }
 
     public int GetNegStreak()
     {

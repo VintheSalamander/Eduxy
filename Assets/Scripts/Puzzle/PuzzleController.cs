@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class PuzzleController
 {
-    private float MinX1, MinX2, MinY1, MinY2, MaxX1, MaxX2, MaxY1, MaxY2;
+    private Vector2 pos;
     static private List<Puzzle> PuzzleList = new List<Puzzle>();
+    static private List<Vector3> PosList = new List<Vector3>();
     static private List<string> Puzzles_names = new List<string>();
+
+    public static void SpawnAll(){
+        Debug.Log("Check");
+        List<Vector3> selectedPos = PosList;
+        foreach (Puzzle p in PuzzleList){
+            int i = UnityEngine.Random.Range(0, selectedPos.Count);
+            Vector3 newPos = selectedPos[i];
+            selectedPos.RemoveAt(i);
+            p.Spawn(newPos);
+        }
+    }
+
     //To store all Puzzles on the Puzzle List
     public static void AddPuzzle(Puzzle newCont)
     {
         PuzzleList.Add(newCont);
+        PosList.Add(newCont.transform.position);
     }
 
     public static List<string> GetNames()
@@ -27,10 +41,10 @@ public class PuzzleController
             p.Disable();
         } 
     }
-    public static void DisableDefSpriteRest(Puzzle notdis)
+    public static void DisableAllButOne(Puzzle nothis)
     {
         foreach (Puzzle p in PuzzleList){
-            if(p != notdis)
+            if(p != nothis)
                 p.Disable();
         } 
     }
@@ -39,13 +53,6 @@ public class PuzzleController
     {
         foreach (Puzzle p in PuzzleList){
             p.Enable();
-        } 
-    }
-
-    public static void RespawnAll()
-    {
-        foreach (Puzzle p in PuzzleList){
-            p.Spawn();
         } 
     }
 
