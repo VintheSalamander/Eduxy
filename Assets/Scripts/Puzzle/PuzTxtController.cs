@@ -5,8 +5,6 @@ using TMPro;
 public class PuzTxtController : MonoBehaviour
 {
     public TMP_Text feedbackText;
-    private List<string> puzzles = new List<string>();
-    private List<string> usedPuzzles = new List<string>();
     private System.Random rnd = new System.Random();
     private string[] pos_messages = new string[] { "Nice", "Good One", "On fire!" };
     private int pos_streak;
@@ -32,14 +30,11 @@ public class PuzTxtController : MonoBehaviour
         feedbackText.text = "Welcome";
         yield return new WaitForSeconds(0.01f);
         PuzzleController.SpawnAll();
-        puzzles = PuzzleController.GetNames();
         PuzzleController.EnableAll();
-        feedbackText.text = "Choose one";
     }
 
     public IEnumerator GoodAnswer()
     {
-        
         //Custom messages depending on the positive streak
         if(!thelast){
             feedbackText.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];            
@@ -58,7 +53,7 @@ public class PuzTxtController : MonoBehaviour
         neg_streak++;
         pos_streak = 0;
         //Custom messages depending on the negative streak
-        if(neg_streak == 7 - usedPuzzles.Count)
+        if(neg_streak == (PuzzleController.GetPuzzlesCount() - PuzzleController.GetUsedPuzCount()))
         {
             feedbackText.text = "The lasttt";
             thelast = true;
@@ -66,34 +61,24 @@ public class PuzTxtController : MonoBehaviour
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
         }
         PuzzleController.DisableAll();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
     }
+
     public IEnumerator Completed()
     {
+        neg_streak = 0;
+        pos_streak = 0;
         feedbackText.text = "Great Jobbb";
         PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
         PuzzleController.SpawnAll();
         PuzzleController.EnableAll();
-    }
-
-    public bool CompleteCheck()
-    {
-        if (usedPuzzles.Count == puzzles.Count){
-            usedPuzzles.Clear();
-            return true;
-        }
-        return false;
+        PuzzleController.UnlockAll();
     }
 
 
     public int GetNegStreak()
     {
         return neg_streak;
-    }
-
-    public int GetUsedCount()
-    {
-        return usedPuzzles.Count;
     }
 }

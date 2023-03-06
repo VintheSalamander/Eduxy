@@ -11,12 +11,13 @@ public class PuzzleController
     static private List<Puzzle> notUsedPList = new List<Puzzle>();
 
     public static void SpawnAll(){
-        List<Vector3> selectedPos = PosList;
+        List<Vector3> selectedPos = new List<Vector3>(PosList);
         foreach (Puzzle p in PuzzleList){
             int i = UnityEngine.Random.Range(0, selectedPos.Count);
             Vector3 newPos = selectedPos[i];
             selectedPos.RemoveAt(i);
             p.Spawn(newPos);
+            notUsedPList.Add(p);
         }
     }
 
@@ -24,7 +25,6 @@ public class PuzzleController
     public static void AddPuzzle(Puzzle newPuz)
     {
         PuzzleList.Add(newPuz);
-        notUsedPList.Add(newPuz);
         PosList.Add(newPuz.transform.position);
     }
 
@@ -65,7 +65,26 @@ public class PuzzleController
     {
         foreach (Puzzle p in notUsedPList){
             p.Enable();
-            Debug.Log(p.gameObject.name);
         } 
+    }
+
+    public static void UnlockAll(){
+        foreach (Puzzle p in PuzzleList){
+            p.UnlockState();
+        } 
+    }
+
+    public static bool CompleteCheck(){
+        if(notUsedPList.Count == 0){
+            return true;
+        }
+        return false;
+    }
+    public static int GetPuzzlesCount(){
+        return PuzzleList.Count;
+    }
+
+    public static int GetUsedPuzCount(){
+        return (PuzzleList.Count - notUsedPList.Count);
     }
 }

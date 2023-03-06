@@ -16,7 +16,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     private Image selfImage;
     private Button selfBut;
     private BoxCollider2D selfCol;
-    public enum PuzzleState {ToMove, inCorrectPos, Correct}
+    public enum PuzzleState {Colliding, ToMove, InCorrectPos, Correct}
     private PuzzleState currentState;
     private bool stateLock;
    
@@ -61,12 +61,18 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     {
         if(currentState == PuzzleState.Correct){
             return;
-        }else if(currentState == PuzzleState.inCorrectPos){
+        }else if(currentState == PuzzleState.InCorrectPos){
             this.transform.position = correctPos.transform.position;
             PuzzleController.RemoveUsed(this);
             SetState(PuzzleState.Correct);
             Disable();
-            Debug.Log("2.1: " + stateLock);
+            if(PuzzleController.CompleteCheck()){
+                StartCoroutine(Panel.Completed());
+            }else{
+                StartCoroutine(Panel.GoodAnswer());
+            }
+        }else if(currentState == PuzzleState.Colliding){
+            Respawn();
         }else{
             position = eventData.position;
             position.z = canvas.planeDistance;
@@ -80,7 +86,9 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     {
         if (collision.gameObject.layer == 6) {
             if (collision == correctPos) {
-                SetState(PuzzleState.inCorrectPos);
+                SetState(PuzzleState.InCorrectPos);
+            }else{
+                SetState(PuzzleState.Colliding);
             }
         }
     }
@@ -102,6 +110,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void Respawn()
     {
+        SetState(PuzzleState.ToMove);
         position = initialPos;
         position.z = canvas.planeDistance + 10;
         selfImage.transform.position = position;
@@ -135,5 +144,6 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void UnlockState() {
         stateLock = false;
+        SetState(PuzzleState.ToMove);
     }
 }

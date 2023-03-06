@@ -63,7 +63,7 @@ public class TextController : MonoBehaviour
         neg_streak++;
         pos_streak = 0;
         //Custom messages depending on the negative streak
-        if(neg_streak == 7 - usedPieces.Count)
+        if(neg_streak == pieces.Count - usedPieces.Count)
         {
             feedbackText.text = "The lasttt";
             thelast = true;
