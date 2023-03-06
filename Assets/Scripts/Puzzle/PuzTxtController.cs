@@ -33,7 +33,6 @@ public class PuzTxtController : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         PuzzleController.SpawnAll();
         puzzles = PuzzleController.GetNames();
-        PuzzleController.HideAllTxt();
         PuzzleController.EnableAll();
         feedbackText.text = "Choose one";
     }
@@ -74,7 +73,6 @@ public class PuzTxtController : MonoBehaviour
         feedbackText.text = "Great Jobbb";
         PuzzleController.DisableAll();
         yield return new WaitForSeconds(1.5f);
-        PuzzleController.HideAllTxt();
         PuzzleController.SpawnAll();
         PuzzleController.EnableAll();
     }

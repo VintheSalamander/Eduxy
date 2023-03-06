@@ -4,9 +4,9 @@ using UnityEngine;
 
 public static class PieceController
 {
+    //To store all pieces on the piece List
     static private List<Piece> PieceList = new List<Piece>();
     static private List<string> pieces_names = new List<string>();
-    //To store all pieces on the piece List
     public static void AddPiece(Piece newCont)
     {
         PieceList.Add(newCont);

@@ -8,9 +8,9 @@ public class PuzzleController
     static private List<Puzzle> PuzzleList = new List<Puzzle>();
     static private List<Vector3> PosList = new List<Vector3>();
     static private List<string> Puzzles_names = new List<string>();
+    static private List<Puzzle> notUsedPList = new List<Puzzle>();
 
     public static void SpawnAll(){
-        Debug.Log("Check");
         List<Vector3> selectedPos = PosList;
         foreach (Puzzle p in PuzzleList){
             int i = UnityEngine.Random.Range(0, selectedPos.Count);
@@ -21,12 +21,17 @@ public class PuzzleController
     }
 
     //To store all Puzzles on the Puzzle List
-    public static void AddPuzzle(Puzzle newCont)
+    public static void AddPuzzle(Puzzle newPuz)
     {
-        PuzzleList.Add(newCont);
-        PosList.Add(newCont.transform.position);
+        PuzzleList.Add(newPuz);
+        notUsedPList.Add(newPuz);
+        PosList.Add(newPuz.transform.position);
     }
 
+    public static void RemoveUsed(Puzzle remPuz)
+    {
+        notUsedPList.Remove(remPuz);
+    }
     public static List<string> GetNames()
     {
         foreach (Puzzle p in PuzzleList){
@@ -56,10 +61,11 @@ public class PuzzleController
         } 
     }
 
-    public static void HideAllTxt()
+    public static void EnableAllNotUsed()
     {
-        foreach (Puzzle p in PuzzleList){
-            p.HideText();
+        foreach (Puzzle p in notUsedPList){
+            p.Enable();
+            Debug.Log(p.gameObject.name);
         } 
     }
 }
