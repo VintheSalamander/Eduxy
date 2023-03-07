@@ -313,7 +313,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 316, y: 170}
     spritePosition: {x: 159, y: 21}
-  - name: Head pr
+  - name: Head_pr
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -324,7 +324,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 52
-    spriteID: 6a3511032bd743042b199b12f2888df0
+    spriteID: ec52e3c9deba3d748874b0fa184db8c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -566,7 +566,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 52
-    spriteID: cb7b27e3bc9f8504cbf83dff7e024956
+    spriteID: 5da0f4f9f9f0f9745a824f73be3c7b9f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 4
       width: 48
       height: 50
-    spriteID: 4c0bd2bc947f93d44ad6e62b43c8215b
+    spriteID: 8ecada6e2a95a0044876955959d2e762
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1059,12 +1059,12 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Head pr
-    spriteName: Head pr
+  - name: Head_pr
+    spriteName: Head_pr
     isGroup: 0
     parentIndex: -1
-    spriteID: 6a3511032bd743042b199b12f2888df0
-    layerID: 69
+    spriteID: ec52e3c9deba3d748874b0fa184db8c0
+    layerID: 100
     mosaicPosition: {x: 316, y: 4}
     flatten: 0
     isImported: 1
@@ -1173,8 +1173,8 @@ ScriptedImporter:
     spriteName: Head on
     isGroup: 0
     parentIndex: -1
-    spriteID: cb7b27e3bc9f8504cbf83dff7e024956
-    layerID: 53
+    spriteID: 5da0f4f9f9f0f9745a824f73be3c7b9f
+    layerID: 101
     mosaicPosition: {x: 374, y: 4}
     flatten: 0
     isImported: 1
@@ -1303,8 +1303,8 @@ ScriptedImporter:
     spriteName: Head
     isGroup: 0
     parentIndex: -1
-    spriteID: 4c0bd2bc947f93d44ad6e62b43c8215b
-    layerID: 47
+    spriteID: 8ecada6e2a95a0044876955959d2e762
+    layerID: 102
     mosaicPosition: {x: 432, y: 4}
     flatten: 0
     isImported: 1

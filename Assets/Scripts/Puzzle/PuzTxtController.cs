@@ -61,7 +61,7 @@ public class PuzTxtController : MonoBehaviour
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
         }
         PuzzleController.DisableAll();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
     }
 
     public IEnumerator Completed()

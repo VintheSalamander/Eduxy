@@ -10,6 +10,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 {
     public PuzTxtController Panel;
     public Collider2D correctPos;
+    public TMP_Text selfText;
     private Canvas canvas;
     private Vector3 position;
     private Vector3 initialPos;
@@ -68,10 +69,13 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
             Disable();
             if(PuzzleController.CompleteCheck()){
                 StartCoroutine(Panel.Completed());
+                ChangeTxtGreen();
             }else{
                 StartCoroutine(Panel.GoodAnswer());
+                ChangeTxtGreen();
             }
         }else if(currentState == PuzzleState.Colliding){
+            StartCoroutine(Panel.IncorrectAnswer());
             Respawn();
         }else{
             position = eventData.position;
@@ -106,6 +110,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
         position.z = canvas.planeDistance + 10;
         selfImage.transform.position = position;
         initialPos = position;
+        ResetTxtColor();
     }
 
     public void Respawn()
@@ -145,5 +150,12 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     public void UnlockState() {
         stateLock = false;
         SetState(PuzzleState.ToMove);
+    }
+
+    public void ResetTxtColor(){
+        selfText.color = Color.white;
+    }
+    public void ChangeTxtGreen(){
+        selfText.color = Color.green;
     }
 }
