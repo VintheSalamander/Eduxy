@@ -1,25 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(BoxCollider2D))]
 public class InteractableObject : MonoBehaviour
 {
     public int sceneBuildIndex;
+    public Sprite highlightedSprite;
+    private Sprite basicSprite;
     private bool inRange;
     void Start(){
-
+        basicSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
     }
+
     void Update(){
-        if(inRange)
+        if(inRange){
             if(Input.GetKeyDown(KeyCode.E)){
-                Debug.Log("Scene Loading");
+                SceneManager.LoadScene(sceneBuildIndex);
             }
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = highlightedSprite;
+        }
+        else{
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = basicSprite;
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.CompareTag("Player")){
             inRange = true;
-            Debug.Log("Player is now in range");
         }
         
     }
@@ -27,7 +35,6 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             inRange = false;
-            Debug.Log("Player is now not in range");
         }
     }
 
