@@ -1,10 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PuzzleController
+public static class PuzzleController
 {
-    private Vector2 pos;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void OnBeforeSceneLoad()
+    {
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+    }
+
+    static void OnActiveSceneChanged(Scene previousScene, Scene newScene){
+        if (newScene.buildIndex == 3)
+        {
+            PuzzleList = new List<Puzzle>();
+            PosList = new List<Vector3>();
+            Puzzles_names = new List<string>();
+            notUsedPList = new List<Puzzle>();
+        }
+    }
+
     static private List<Puzzle> PuzzleList = new List<Puzzle>();
     static private List<Vector3> PosList = new List<Vector3>();
     static private List<string> Puzzles_names = new List<string>();

@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
@@ -17,10 +18,10 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     private Image selfImage;
     private Button selfBut;
     private BoxCollider2D selfCol;
-    public enum PuzzleState {Colliding, ToMove, InCorrectPos, Correct}
+    public enum PuzzleState {ToMove, Colliding, InCorrectPos, Correct}
     private PuzzleState currentState;
     private bool stateLock;
-   
+
     void Start()
     {
         selfImage = this.GetComponent<Image>();
@@ -79,8 +80,8 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
             Respawn();
         }else{
             position = eventData.position;
-            position.z = canvas.planeDistance;
-            this.transform.position = canvas.worldCamera.ScreenToWorldPoint(position);
+            position.z = this.canvas.planeDistance;
+            transform.position = canvas.worldCamera.ScreenToWorldPoint(position);
         }
         selfImage.color = new Vector4(1f, 1f, 1f, 1f);
         PuzzleController.EnableAllNotUsed();
@@ -117,7 +118,7 @@ public class Puzzle : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     {
         SetState(PuzzleState.ToMove);
         position = initialPos;
-        position.z = canvas.planeDistance + 10;
+        position.z = this.canvas.planeDistance + 10;
         selfImage.transform.position = position;
     }
 

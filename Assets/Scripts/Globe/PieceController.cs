@@ -1,12 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class PieceController
 {
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void OnBeforeSceneLoad()
+    {
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+    }
+
+    static void OnActiveSceneChanged(Scene previousScene, Scene newScene){
+        if (newScene.buildIndex == 2)
+        {
+            PieceList = new List<Piece>();
+            pieces_names = new List<string>();
+        }
+    }
+
     //To store all pieces on the piece List
     static private List<Piece> PieceList = new List<Piece>();
     static private List<string> pieces_names = new List<string>();
+
     public static void AddPiece(Piece newCont)
     {
         PieceList.Add(newCont);
