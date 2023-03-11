@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Home
+  - name: Pause
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,6 +102,72 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
+      width: 16
+      height: 16
+    spriteID: 36dddd10df37f0547bff4ec278f36b51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 2, y: 2}
+  - name: Pause_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 16
+      height: 15
+    spriteID: a59faa71382d2b041871ea2c28ab3732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 52}
+    spritePosition: {x: 2, y: 2}
+  - name: Pause_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 98
+      width: 16
+      height: 13
+    spriteID: c1bda9e42866bd348ae0a4613cff0368
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 98}
+    spritePosition: {x: 2, y: 3}
+  - name: Home
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
       width: 16
       height: 16
     spriteID: f7f564ea42f43f14bab6c081643d943d
@@ -113,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 28}
     spritePosition: {x: 2, y: 2}
   - name: Home_on
     originalName: 
@@ -123,7 +189,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 28
+      y: 75
       width: 16
       height: 15
     spriteID: 48bfbc1c890dc9c469d17ecabafd0536
@@ -135,7 +201,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 28}
+    uvTransform: {x: 4, y: 75}
     spritePosition: {x: 2, y: 2}
   - name: Home_pr
     originalName: 
@@ -234,42 +300,42 @@ ScriptedImporter:
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Pause
-    spriteName: Capa 2
+    spriteName: Pause
     isGroup: 0
     parentIndex: -1
     spriteID: 36dddd10df37f0547bff4ec278f36b51
     layerID: 4
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Pause_on
-    spriteName: 
+    spriteName: Pause_on
     isGroup: 0
     parentIndex: -1
     spriteID: a59faa71382d2b041871ea2c28ab3732
     layerID: 5
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 52}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Pause_pr
-    spriteName: 
+    spriteName: Pause_pr
     isGroup: 0
     parentIndex: -1
     spriteID: c1bda9e42866bd348ae0a4613cff0368
     layerID: 6
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 98}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Home
     spriteName: Home
     isGroup: 0
     parentIndex: -1
     spriteID: f7f564ea42f43f14bab6c081643d943d
     layerID: 2
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 28}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -279,7 +345,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 48bfbc1c890dc9c469d17ecabafd0536
     layerID: 12
-    mosaicPosition: {x: 4, y: 28}
+    mosaicPosition: {x: 4, y: 75}
     flatten: 0
     isImported: 1
     isVisible: 1
