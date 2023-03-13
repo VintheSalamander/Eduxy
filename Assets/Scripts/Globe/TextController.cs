@@ -56,6 +56,7 @@ public class TextController : MonoBehaviour
         PieceController.ResetRed();
         PieceController.EnableWhite();
         AskPiece();
+        ProgressBar.AddCurrent();
     }
 
     public IEnumerator IncorrectAnswer()

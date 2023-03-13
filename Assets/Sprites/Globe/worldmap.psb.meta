@@ -93,6 +93,50 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: Self texts
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 4, y: 8, z: 4, w: 5}
+    rect:
+      serializedVersion: 2
+      x: 375
+      y: 146
+      width: 16
+      height: 16
+    spriteID: 390e67de568c1cc4bb1bba85d2830013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 375, y: 146}
+    spritePosition: {x: 237, y: 152}
+  - name: Continent
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 340
+      width: 130
+      height: 13
+    spriteID: 2289ed3fa95cc2947ade71cff587a1e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 304, y: 340}
+    spritePosition: {x: 87, y: 149}
   - name: NA_d
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -827,6 +871,26 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Self texts
+    spriteName: Self texts
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 390e67de568c1cc4bb1bba85d2830013
+    layerID: 115
+    mosaicPosition: {x: 375, y: 146}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Continent
+    spriteName: Continent
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2289ed3fa95cc2947ade71cff587a1e5
+    layerID: 113
+    mosaicPosition: {x: 304, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: NA_d
     spriteName: NA_d
     isGroup: 0

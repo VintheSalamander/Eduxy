@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18239d3eeb2281e4bac2aa63d0a96369
+guid: b393844c71b3c0c4d9da1cb24cd1b5df
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,8 +10,8 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
   textureImporterSettings:
     alphaSource: 1
-    mipMapMode: 0
-    enableMipMap: 1
+    mipMapMode: 1
+    enableMipMap: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
@@ -29,7 +29,7 @@ ScriptedImporter:
     nPOTScale: 1
     sRGBTexture: 0
     spriteMode: 2
-    spriteExtrude: 1
+    spriteExtrude: 0
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
@@ -93,7 +93,51 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Pause
+  - name: Star
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 4
+      width: 11
+      height: 10
+    spriteID: 9b10b363ebcc98b4c809c5b295a53e42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 232, y: 4}
+    spritePosition: {x: 213, y: 3}
+  - name: Mask
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 27
+      width: 64
+      height: 2
+    spriteID: 915f8f4fce6ae1944a5719eeb789163f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 27}
+    spritePosition: {x: 10, y: 7}
+  - name: ProgPanel
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +146,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 16
-    spriteID: 36dddd10df37f0547bff4ec278f36b51
+      width: 220
+      height: 15
+    spriteID: 40e226f7a09a2ff40b8e9aac3821cb8b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,117 +158,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 2, y: 2}
-  - name: Pause_on
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 52
-      width: 16
-      height: 15
-    spriteID: a59faa71382d2b041871ea2c28ab3732
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 52}
-    spritePosition: {x: 2, y: 2}
-  - name: Pause_pr
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 98
-      width: 16
-      height: 13
-    spriteID: c1bda9e42866bd348ae0a4613cff0368
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 98}
-    spritePosition: {x: 2, y: 3}
-  - name: Home
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 28
-      width: 16
-      height: 16
-    spriteID: f7f564ea42f43f14bab6c081643d943d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 28}
-    spritePosition: {x: 2, y: 2}
-  - name: Home_on
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 75
-      width: 16
-      height: 15
-    spriteID: 48bfbc1c890dc9c469d17ecabafd0536
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 75}
-    spritePosition: {x: 2, y: 2}
-  - name: Home_pr
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 28
-      y: 4
-      width: 16
-      height: 13
-    spriteID: 33594df48647975448584654ac4856d7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 28, y: 4}
-    spritePosition: {x: 2, y: 3}
+    spritePosition: {x: 6, y: 0}
   characterData:
     bones: []
     parts: []
@@ -244,7 +178,7 @@ ScriptedImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
@@ -299,63 +233,33 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Pause
-    spriteName: Pause
+  - name: Star
+    spriteName: Star
     isGroup: 0
     parentIndex: -1
-    spriteID: 36dddd10df37f0547bff4ec278f36b51
-    layerID: 4
-    mosaicPosition: {x: 4, y: 4}
+    spriteID: 9b10b363ebcc98b4c809c5b295a53e42
+    layerID: 8
+    mosaicPosition: {x: 232, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Pause_on
-    spriteName: Pause_on
+  - name: Mask
+    spriteName: Mask
     isGroup: 0
     parentIndex: -1
-    spriteID: a59faa71382d2b041871ea2c28ab3732
+    spriteID: 915f8f4fce6ae1944a5719eeb789163f
     layerID: 5
-    mosaicPosition: {x: 4, y: 52}
+    mosaicPosition: {x: 4, y: 27}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Pause_pr
-    spriteName: Pause_pr
+  - name: ProgPanel
+    spriteName: ProgPanel
     isGroup: 0
     parentIndex: -1
-    spriteID: c1bda9e42866bd348ae0a4613cff0368
+    spriteID: 40e226f7a09a2ff40b8e9aac3821cb8b
     layerID: 6
-    mosaicPosition: {x: 4, y: 98}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Home
-    spriteName: Home
-    isGroup: 0
-    parentIndex: -1
-    spriteID: f7f564ea42f43f14bab6c081643d943d
-    layerID: 2
-    mosaicPosition: {x: 4, y: 28}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Home_on
-    spriteName: Home_on
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 48bfbc1c890dc9c469d17ecabafd0536
-    layerID: 12
-    mosaicPosition: {x: 4, y: 75}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Home_pr
-    spriteName: Home_pr
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 33594df48647975448584654ac4856d7
-    layerID: 13
-    mosaicPosition: {x: 28, y: 4}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
