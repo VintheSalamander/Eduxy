@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 134683898918429039}
   - component: {fileID: 134683898918429038}
   - component: {fileID: 134683898918429033}
+  - component: {fileID: 6513480418783198223}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -32,7 +33,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 134683899265860992}
-  - {fileID: 2968284767401674308}
+  - {fileID: 2968284765644912145}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,6 +103,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6513480418783198223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134683898918429032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8c9277534f47245af87f299f2814ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paused: 0
+  PauseMenu: {fileID: 2968284765644912237}
+  pauseBut: {fileID: 134683899265860995}
+  homeBut: {fileID: 0}
 --- !u!1 &134683899265860995
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,9 +240,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2968284767401674311}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: Resume
+      - m_Target: {fileID: 6513480418783198223}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Resume_Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -261,19 +278,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2968284765644912237}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0039478}
-  m_LocalScale: {x: 0.020644095, y: 0.020644095, z: 0.020644095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2968284767116437277}
   - {fileID: 2968284765947712642}
-  m_Father: {fileID: 2968284767401674308}
-  m_RootOrder: 0
+  m_Father: {fileID: 134683898918429036}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.3720284, y: -0.22744724}
+  m_AnchoredPosition: {x: 441, y: 242.20001}
   m_SizeDelta: {x: 882, y: 484.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2968284765644912144
@@ -458,9 +475,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2968284767401674311}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: Resume
+      - m_Target: {fileID: 6513480418783198223}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Resume_Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -671,8 +688,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2968284767401674311}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+      - m_Target: {fileID: 6513480418783198223}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -759,54 +776,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2968284767401674310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2968284767401674308}
-  - component: {fileID: 2968284767401674311}
-  m_Layer: 0
-  m_Name: PauseController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2968284767401674308
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2968284767401674310}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -66.46106, y: 11.017545, z: -0.19123144}
-  m_LocalScale: {x: 48.440002, y: 48.440002, z: 48.440002}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2968284765644912145}
-  m_Father: {fileID: 134683898918429036}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2968284767401674311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2968284767401674310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf8c9277534f47245af87f299f2814ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paused: 0
-  PauseMenu: {fileID: 2968284765644912237}
-  pauseBut: {fileID: 134683899265860995}
 --- !u!1 &6872184369592072635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1018,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+      - m_Target: {fileID: 6513480418783198223}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Home
         m_Mode: 1
         m_Arguments:

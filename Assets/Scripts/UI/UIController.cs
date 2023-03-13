@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Pause : MonoBehaviour
+public class UIController : MonoBehaviour
 {
     public bool paused;
     public GameObject PauseMenu;
@@ -26,7 +26,7 @@ public class Pause : MonoBehaviour
             paused = !paused;
         }
     }
-    public void Resume()
+    public void Resume_Pause()
     {
         paused = !paused;
     }
