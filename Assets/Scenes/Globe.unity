@@ -843,7 +843,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1514,9 +1514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a73c07d00430ae4d89db9d19da6299d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximum: 7
-  current: 0
-  bar: {fileID: 779115826}
+  maximumProg: 0
+  bar1: {fileID: 779115826}
+  bar2: {fileID: 597217798}
+  bar3: {fileID: 919320546}
+  star: {fileID: 401597108}
 --- !u!1 &1218335545
 GameObject:
   m_ObjectHideFlags: 0

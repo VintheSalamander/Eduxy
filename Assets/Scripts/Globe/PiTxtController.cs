@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class TextController : MonoBehaviour
+public class PiTxtController : MonoBehaviour
 {
     public TMP_Text askText;
     public TMP_Text feedbackText;

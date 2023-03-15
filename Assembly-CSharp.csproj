@@ -38,15 +38,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Puzzle\Puzzle.cs" />
      <Compile Include="Assets\Scripts\Globe\Piece.cs" />
+     <Compile Include="Assets\Scripts\UI\UIController.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MainRoom\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\MainRoom\Objects\InteractableObject.cs" />
      <Compile Include="Assets\Scripts\Puzzle\PuzzleController.cs" />
      <Compile Include="Assets\Scripts\Globe\PieceController.cs" />
-     <Compile Include="Assets\Scripts\Globe\TextController.cs" />
-     <Compile Include="Assets\Scripts\Puzzle\PuzTxtController.cs" />
-     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\UI\UIController.cs" />
+     <Compile Include="Assets\Scripts\Globe\PiTxtController.cs" />
      <Compile Include="Assets\Scripts\UI\ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\PuzTxtController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

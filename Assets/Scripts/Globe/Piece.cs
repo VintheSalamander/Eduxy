@@ -6,7 +6,7 @@ using TMPro;
 
 public class Piece : MonoBehaviour
 {
-    public TextController Panel;
+    public PiTxtController Panel;
     public TMP_Text selfText;
     private string answer;
     private Image selfImage;

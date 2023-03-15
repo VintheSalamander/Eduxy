@@ -17,12 +17,27 @@ public class ProgressBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = ProgState.Prog1;
         currentProg = 0;
-        currentState = 0;
-        BarToModify();
-        bar1.fillAmount = 0;
-        bar2.fillAmount = 0;
-        bar3.fillAmount = 0;
+        star.SetActive(false);
+        if(currentState == ProgState.Prog1){
+            bar1.fillAmount = 0;
+            bar2.fillAmount = 0;
+            bar3.fillAmount = 0;
+            currentBar = bar1;
+        }else if(currentState == ProgState.Prog2){
+            bar1.fillAmount = maximumProg;
+            bar2.fillAmount = 0;
+            bar3.fillAmount = 0;
+            currentBar = bar2;
+        }else if(currentState == ProgState.Prog3){
+            bar1.fillAmount = maximumProg;
+            bar2.fillAmount = maximumProg;
+            bar3.fillAmount = 0;
+            currentBar = bar3;
+        }else{
+            StarReached();
+        }
     }
 
     // Update is called once per frame
@@ -38,25 +53,26 @@ public class ProgressBar : MonoBehaviour
         float fillQuantity = (float) currentProg / (float) maximumProg;
         currentBar.fillAmount = fillQuantity;
         if(currentProg == maximumProg){
+            currentProg = 0;
             currentState += 1;
             BarToModify();
         }
-        
     }
 
     void BarToModify(){
         if(currentState == ProgState.Prog1){
             currentBar = bar1;
-            star.SetActive(false);
         }else if(currentState == ProgState.Prog2){
             currentBar = bar2;
-            star.SetActive(false);
         }else if(currentState == ProgState.Prog3){
             currentBar = bar3;
-            star.SetActive(false);
         }else{
-            star.SetActive(true);
+            StarReached();
         }
+    }
+
+    void StarReached(){
+        star.SetActive(true);
     }
 
     public static void AddCurrent()
