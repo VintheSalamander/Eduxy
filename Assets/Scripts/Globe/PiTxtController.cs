@@ -52,7 +52,7 @@ public class PiTxtController : MonoBehaviour
         thelast = false;
         neg_streak = 0;
         PieceController.DisableAll();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         PieceController.ResetRed();
         PieceController.EnableWhite();
         AskPiece();
