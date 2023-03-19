@@ -46,8 +46,9 @@ public class PiTxtController : MonoBehaviour
         if(!thelast){
             feedbackText.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];            
             pos_streak++;
+            ProgressBar.AddCurrent();
         }else{
-            feedbackText.text = "Next time!";
+            feedbackText.text = "Next time";
         }
         thelast = false;
         neg_streak = 0;
@@ -56,7 +57,6 @@ public class PiTxtController : MonoBehaviour
         PieceController.ResetRed();
         PieceController.EnableWhite();
         AskPiece();
-        ProgressBar.AddCurrent();
     }
 
     public IEnumerator IncorrectAnswer()
@@ -66,10 +66,11 @@ public class PiTxtController : MonoBehaviour
         //Custom messages depending on the negative streak
         if(neg_streak == pieces.Count - usedPieces.Count)
         {
-            feedbackText.text = "The lasttt";
+            feedbackText.text = "The last!";
             thelast = true;
         }else{
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
+            ProgressBar.MinusCurrent();
         }
         PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
@@ -77,9 +78,11 @@ public class PiTxtController : MonoBehaviour
     }
     public IEnumerator Completed()
     {
-        feedbackText.text = "Great Jobbb";
+        feedbackText.text = "Great Job";
         PieceController.DisableAll();
+        ProgressBar.AddCurrent();
         yield return new WaitForSeconds(1.5f);
+        ProgressBar.ResetCurrent();
         AskPiece();
         PieceController.HideAllTxt();
         PieceController.ResetAll();
@@ -104,7 +107,7 @@ public class PiTxtController : MonoBehaviour
         AskPiece();
         PieceController.HideAllTxt();
         PieceController.EnableAll();
-        feedbackText.text = "Choose one";
+        feedbackText.text = "Choose";
     }
 
     public string GetText()

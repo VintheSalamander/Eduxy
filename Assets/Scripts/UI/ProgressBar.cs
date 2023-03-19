@@ -6,16 +6,18 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     public float maximumProg;
-    public static float targetProg;
+    public static int targetProg;
     public float transitionSpeed;
     public enum ProgState {Prog1, Prog2, Prog3, Star}
     public Image bar1;
     public Image bar2;
     public Image bar3;
     public GameObject star;
-    private ProgState currentState;
+    public GameObject home;
+    private static ProgState currentState;
     private Image currentBar;
     private float currentProg;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class ProgressBar : MonoBehaviour
         currentProg = 0;
         targetProg = 0;
         star.SetActive(false);
+        home.SetActive(false);
         if(currentState == ProgState.Prog1){
             bar1.fillAmount = 0;
             bar2.fillAmount = 0;
@@ -58,7 +61,7 @@ public class ProgressBar : MonoBehaviour
     {
         float fillQuantity =  currentProg / maximumProg;
         currentBar.fillAmount = fillQuantity;
-        if(currentProg >= maximumProg){
+        if(currentProg >= maximumProg-0.05f){
             currentProg = 0;
             targetProg = 0;
             currentState += 1;
@@ -80,11 +83,26 @@ public class ProgressBar : MonoBehaviour
 
     void StarReached(){
         star.SetActive(true);
+        home.SetActive(true);
     }
 
     public static void AddCurrent()
     {
-        targetProg += 1f;
+        targetProg += 1;
+    }
+
+    public static void MinusCurrent()
+    {
+        if(targetProg != 0){  
+            targetProg -= 1;
+        }
     } 
+
+    public static void ResetCurrent()
+    {
+        if(currentState == ProgState.Prog3){
+            targetProg = 0;
+        }
+    }
 
 }
