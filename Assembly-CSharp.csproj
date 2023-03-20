@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MainRoom\Objects\TrophyController.cs" />
      <Compile Include="Assets\Scripts\Puzzle\Puzzle.cs" />
      <Compile Include="Assets\Scripts\Globe\Piece.cs" />
      <Compile Include="Assets\Scripts\UI\UIController.cs" />
@@ -48,7 +49,6 @@
      <Compile Include="Assets\Scripts\UI\ProgressBar.cs" />
      <Compile Include="Assets\Scripts\Puzzle\PuzTxtController.cs" />
      <Compile Include="Assets\Scripts\MainRoom\Objects\Trophy.cs" />
-     <Compile Include="Assets\Scripts\MainRoom\Objects\TrophyController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

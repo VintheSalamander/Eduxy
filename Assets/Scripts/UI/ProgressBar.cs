@@ -8,6 +8,7 @@ public class ProgressBar : MonoBehaviour
     public float maximumProg;
     public static int targetProg;
     public float transitionSpeed;
+    public string trophyName;
     public enum ProgState {Prog1, Prog2, Prog3, Star}
     public Image bar1;
     public Image bar2;
@@ -83,6 +84,7 @@ public class ProgressBar : MonoBehaviour
     void StarReached(){
         star.SetActive(true);
         home.SetActive(true);
+        TrophyController.ShowTrophy(trophyName);
     }
 
     public static void AddCurrent()

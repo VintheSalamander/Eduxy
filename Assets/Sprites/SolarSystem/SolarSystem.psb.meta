@@ -100,8 +100,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 316
-      y: 4
+      x: 304
+      y: 188
       width: 91
       height: 62
     spriteID: 3d119eef654532d46a4abaa8da5f0933
@@ -113,7 +113,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 316, y: 4}
+    uvTransform: {x: 304, y: 188}
     spritePosition: {x: 0, y: 79}
   - name: Sun
     originalName: 
@@ -122,8 +122,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 415
-      y: 4
+      x: 403
+      y: 188
       width: 54
       height: 55
     spriteID: 1b78b3b126595984db7f3178fbd7362f
@@ -135,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 415, y: 4}
+    uvTransform: {x: 403, y: 188}
     spritePosition: {x: 1, y: 117}
   - name: Moon
     originalName: 
@@ -144,8 +144,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 407
-      y: 125
+      x: 442
+      y: 258
       width: 6
       height: 6
     spriteID: 3d3184ddb88a80f419746353d690ac19
@@ -157,7 +157,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 407, y: 125}
+    uvTransform: {x: 442, y: 258}
     spritePosition: {x: 135, y: 124}
   - name: Earth
     originalName: 
@@ -166,8 +166,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 434
-      y: 95
+      x: 408
+      y: 279
       width: 17
       height: 16
     spriteID: b10f142c4304fa44085dc9982db79c98
@@ -179,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 434, y: 95}
+    uvTransform: {x: 408, y: 279}
     spritePosition: {x: 118, y: 108}
   - name: Venus
     originalName: 
@@ -188,8 +188,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 459
-      y: 95
+      x: 465
+      y: 235
       width: 15
       height: 15
     spriteID: 0495e89d9fbe1d44fa1c5dab73d97bd7
@@ -201,7 +201,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 459, y: 95}
+    uvTransform: {x: 465, y: 235}
     spritePosition: {x: 66, y: 80}
   - name: Mars
     originalName: 
@@ -210,8 +210,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 482
-      y: 95
+      x: 488
+      y: 235
       width: 13
       height: 13
     spriteID: ee783141e9926b3429b698e1832045b6
@@ -223,7 +223,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 482, y: 95}
+    uvTransform: {x: 488, y: 235}
     spritePosition: {x: 109, y: 61}
   - name: Uranus
     originalName: 
@@ -232,8 +232,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 477
-      y: 4
+      x: 4
+      y: 367
       width: 25
       height: 29
     spriteID: 8a361665ff1cd6c4f863c6f8ed933332
@@ -245,8 +245,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 477, y: 4}
-    spritePosition: {x: 254, y: 125}
+    uvTransform: {x: 4, y: 367}
+    spritePosition: {x: 254, y: 50}
   - name: Neptune
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -254,8 +254,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 477
-      y: 41
+      x: 348
+      y: 279
       width: 25
       height: 24
     spriteID: 090746fe4f32ade4da6dcdbe8458ed43
@@ -267,7 +267,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 477, y: 41}
+    uvTransform: {x: 348, y: 279}
     spritePosition: {x: 268, y: 43}
   - name: Saturn
     originalName: 
@@ -276,8 +276,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 363
-      y: 95
+      x: 304
+      y: 279
       width: 36
       height: 25
     spriteID: 7886bd8d981efe542b268ab66bac9a9e
@@ -289,7 +289,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 363, y: 95}
+    uvTransform: {x: 304, y: 279}
     spritePosition: {x: 216, y: 86}
   - name: Jupiter
     originalName: 
@@ -298,8 +298,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 316
-      y: 95
+      x: 465
+      y: 188
       width: 39
       height: 39
     spriteID: 92bbe679b151fe844a1f7d94a736acb2
@@ -311,8 +311,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 316, y: 95}
-    spritePosition: {x: 162, y: 37}
+    uvTransform: {x: 465, y: 188}
+    spritePosition: {x: 161, y: 36}
   - name: Planet
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -320,8 +320,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 316
-      y: 74
+      x: 304
+      y: 258
       width: 130
       height: 13
     spriteID: afca402a21ee44f4297c8bd90ab6424d
@@ -333,8 +333,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 316, y: 74}
+    uvTransform: {x: 304, y: 258}
     spritePosition: {x: 87, y: 155}
+  - name: Asteroid Belt
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 4
+      width: 179
+      height: 176
+    spriteID: 8d955999d4f4a7b449703b6e1f8364c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 316, y: 4}
+    spritePosition: {x: 1, y: 0}
   - name: AstroParrot
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -342,8 +364,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 407
-      y: 95
+      x: 381
+      y: 279
       width: 19
       height: 22
     spriteID: 21682814f417d6c4bad4728a115fbc98
@@ -355,8 +377,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 407, y: 95}
-    spritePosition: {x: 5, y: 7}
+    uvTransform: {x: 381, y: 279}
+    spritePosition: {x: 15, y: 39}
+  - name: Stars
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 188
+      width: 292
+      height: 171
+    spriteID: ce34770ecc1e52a409976de04fc8991a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 188}
+    spritePosition: {x: 6, y: 2}
   - name: Background
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -415,7 +459,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3d119eef654532d46a4abaa8da5f0933
     layerID: 31
-    mosaicPosition: {x: 316, y: 4}
+    mosaicPosition: {x: 304, y: 188}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -425,7 +469,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 1b78b3b126595984db7f3178fbd7362f
     layerID: 30
-    mosaicPosition: {x: 415, y: 4}
+    mosaicPosition: {x: 403, y: 188}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -435,7 +479,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3d3184ddb88a80f419746353d690ac19
     layerID: 47
-    mosaicPosition: {x: 407, y: 125}
+    mosaicPosition: {x: 442, y: 258}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -445,7 +489,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b10f142c4304fa44085dc9982db79c98
     layerID: 34
-    mosaicPosition: {x: 434, y: 95}
+    mosaicPosition: {x: 408, y: 279}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -455,7 +499,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 0495e89d9fbe1d44fa1c5dab73d97bd7
     layerID: 32
-    mosaicPosition: {x: 459, y: 95}
+    mosaicPosition: {x: 465, y: 235}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -465,7 +509,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: ee783141e9926b3429b698e1832045b6
     layerID: 33
-    mosaicPosition: {x: 482, y: 95}
+    mosaicPosition: {x: 488, y: 235}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -475,7 +519,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8a361665ff1cd6c4f863c6f8ed933332
     layerID: 42
-    mosaicPosition: {x: 477, y: 4}
+    mosaicPosition: {x: 4, y: 367}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -485,7 +529,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 090746fe4f32ade4da6dcdbe8458ed43
     layerID: 40
-    mosaicPosition: {x: 477, y: 41}
+    mosaicPosition: {x: 348, y: 279}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -495,7 +539,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7886bd8d981efe542b268ab66bac9a9e
     layerID: 37
-    mosaicPosition: {x: 363, y: 95}
+    mosaicPosition: {x: 304, y: 279}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -505,7 +549,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 92bbe679b151fe844a1f7d94a736acb2
     layerID: 35
-    mosaicPosition: {x: 316, y: 95}
+    mosaicPosition: {x: 465, y: 188}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -515,17 +559,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: afca402a21ee44f4297c8bd90ab6424d
     layerID: 5
-    mosaicPosition: {x: 316, y: 74}
+    mosaicPosition: {x: 304, y: 258}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Asteroid Belt
+    spriteName: Asteroid Belt
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8d955999d4f4a7b449703b6e1f8364c6
+    layerID: 49
+    mosaicPosition: {x: 316, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 341aa7dd420e22d4ca7e6f59b75f6843
+    layerID: 48
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: AstroParrot
     spriteName: AstroParrot
     isGroup: 0
     parentIndex: -1
     spriteID: 21682814f417d6c4bad4728a115fbc98
     layerID: 44
-    mosaicPosition: {x: 407, y: 95}
+    mosaicPosition: {x: 381, y: 279}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -539,16 +603,26 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Capa 2
+  - name: LightStars
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 9e7a61df907fc9f4690c83e425a07241
-    layerID: 4
+    spriteID: 7eafa42e0aa9fe24e86538cf4fd16663
+    layerID: 50
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
+  - name: Stars
+    spriteName: Stars
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ce34770ecc1e52a409976de04fc8991a
+    layerID: 51
+    mosaicPosition: {x: 4, y: 188}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Background
     spriteName: Background
     isGroup: 0

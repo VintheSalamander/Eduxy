@@ -23,9 +23,9 @@ public static class PieceController
     static private List<Piece> PieceList = new List<Piece>();
     static private List<string> pieces_names = new List<string>();
 
-    public static void AddPiece(Piece newCont)
+    public static void AddPiece(Piece newP)
     {
-        PieceList.Add(newCont);
+        PieceList.Add(newP);
     }
 
     public static List<string> GetNames()
