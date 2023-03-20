@@ -22,7 +22,6 @@ public class ProgressBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = ProgState.Prog1;
         currentProg = 0;
         targetProg = 0;
         star.SetActive(false);

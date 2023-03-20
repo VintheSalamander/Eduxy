@@ -100,7 +100,7 @@ ScriptedImporter:
     border: {x: 4, y: 8, z: 4, w: 5}
     rect:
       serializedVersion: 2
-      x: 375
+      x: 467
       y: 146
       width: 16
       height: 16
@@ -113,8 +113,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 375, y: 146}
+    uvTransform: {x: 467, y: 146}
     spritePosition: {x: 237, y: 152}
+  - name: AstroParrot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 375
+      y: 146
+      width: 19
+      height: 22
+    spriteID: 2c5e8a614cd8de44b908d352cebd99c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 375, y: 146}
+    spritePosition: {x: 278, y: 149}
   - name: Continent
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -877,6 +899,16 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 390e67de568c1cc4bb1bba85d2830013
     layerID: 115
+    mosaicPosition: {x: 467, y: 146}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AstroParrot
+    spriteName: AstroParrot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c5e8a614cd8de44b908d352cebd99c5
+    layerID: 116
     mosaicPosition: {x: 375, y: 146}
     flatten: 0
     isImported: 1
