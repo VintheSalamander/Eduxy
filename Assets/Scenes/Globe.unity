@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a73c07d00430ae4d89db9d19da6299d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumProg: 1
+  maximumProg: 7
   transitionSpeed: 2
   trophyName: Globe
   bar1: {fileID: 779115826}

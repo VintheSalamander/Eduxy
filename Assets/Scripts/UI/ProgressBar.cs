@@ -99,11 +99,15 @@ public class ProgressBar : MonoBehaviour
         }
     } 
 
-    public static void ResetCurrent()
+    public static int CompleteOrReset()
     {
         if(currentState == ProgState.Prog3){
             targetProg = 0;
+            return 0;
+        }else if(currentState == ProgState.Star){
+            return 1;
         }
+        return 2;
     }
 
 }

@@ -70,8 +70,8 @@ public class PiTxtController : MonoBehaviour
             thelast = true;
         }else{
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
-            ProgressBar.MinusCurrent();
         }
+        ProgressBar.MinusCurrent();
         PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
         PieceController.EnableWhite();
@@ -82,7 +82,12 @@ public class PiTxtController : MonoBehaviour
         PieceController.DisableAll();
         ProgressBar.AddCurrent();
         yield return new WaitForSeconds(1.5f);
-        ProgressBar.ResetCurrent();
+        int m = ProgressBar.CompleteOrReset();
+        if(m == 0){
+            feedbackText.text = "Need All";
+        }else if(m == 1){
+            feedbackText.text = "Congrats!";
+        }
         AskPiece();
         PieceController.HideAllTxt();
         PieceController.ResetAll();
