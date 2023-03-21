@@ -21,7 +21,7 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    isReadable: 0
+    isReadable: 1
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
@@ -93,18 +93,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Mercury
+  - name: Mercury_pr
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 188
-      width: 91
-      height: 62
-    spriteID: 3d119eef654532d46a4abaa8da5f0933
+      x: 228
+      y: 897
+      width: 13
+      height: 13
+    spriteID: dd4b26513d318174db4882da4bc280f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,8 +113,118 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 304, y: 188}
-    spritePosition: {x: 0, y: 79}
+    uvTransform: {x: 228, y: 897}
+    spritePosition: {x: 79, y: 129}
+  - name: Mercury_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 851
+      width: 13
+      height: 13
+    spriteID: 78e3178e731204b4982e82da7d83592d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 851}
+    spritePosition: {x: 79, y: 129}
+  - name: Mercury
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 759
+      width: 11
+      height: 11
+    spriteID: 996e0cdec02027f4fa6e688497c37214
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 284, y: 759}
+    spritePosition: {x: 80, y: 130}
+  - name: Mercury_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 782
+      width: 11
+      height: 11
+    spriteID: 4e9a6bd7b7aba804ea8c421619281732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 284, y: 782}
+    spritePosition: {x: 80, y: 130}
+  - name: Sun_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 367
+      width: 56
+      height: 57
+    spriteID: c375553028a4c6748835b3c330a9ca86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 195, y: 367}
+    spritePosition: {x: 0, y: 116}
+  - name: Sun_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 432
+      width: 56
+      height: 57
+    spriteID: e0fae931ec7be63428676fc27d1c4ef4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 195, y: 432}
+    spritePosition: {x: 0, y: 116}
   - name: Sun
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -122,8 +232,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 403
-      y: 188
+      x: 193
+      y: 551
       width: 54
       height: 55
     spriteID: 1b78b3b126595984db7f3178fbd7362f
@@ -135,8 +245,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 403, y: 188}
+    uvTransform: {x: 193, y: 551}
     spritePosition: {x: 1, y: 117}
+  - name: Sun_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 614
+      width: 54
+      height: 55
+    spriteID: c186ab14221f954438ba8ec5753ca164
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 193, y: 614}
+    spritePosition: {x: 1, y: 117}
+  - name: Moon_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 805
+      width: 10
+      height: 10
+    spriteID: a828a2523abe3c243bf5c45fd7d043d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 284, y: 805}
+    spritePosition: {x: 135, y: 124}
+  - name: Moon_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 828
+      width: 10
+      height: 10
+    spriteID: 43467c10f6f65994db36adef5586a625
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 284, y: 828}
+    spritePosition: {x: 135, y: 124}
   - name: Moon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,10 +320,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 442
-      y: 258
-      width: 6
-      height: 6
+      x: 286
+      y: 735
+      width: 8
+      height: 8
     spriteID: 3d3184ddb88a80f419746353d690ac19
     spriteBone: []
     spriteOutline: []
@@ -157,8 +333,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 442, y: 258}
-    spritePosition: {x: 135, y: 124}
+    uvTransform: {x: 286, y: 735}
+    spritePosition: {x: 136, y: 125}
+  - name: Moon_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 286
+      y: 471
+      width: 8
+      height: 8
+    spriteID: 3630d4a87e9a4dc4290f84ef6b903bfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 286, y: 471}
+    spritePosition: {x: 136, y: 125}
+  - name: Earth_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 471
+      width: 19
+      height: 18
+    spriteID: 0ca7b034363831b418176e44e6a22372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 471}
+    spritePosition: {x: 117, y: 107}
+  - name: Earth_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 797
+      width: 19
+      height: 18
+    spriteID: fc27cbea0d62d814dadffc4e1af3566e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 228, y: 797}
+    spritePosition: {x: 117, y: 107}
   - name: Earth
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -166,8 +408,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
-      y: 279
+      x: 228
+      y: 873
       width: 17
       height: 16
     spriteID: b10f142c4304fa44085dc9982db79c98
@@ -179,8 +421,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 408, y: 279}
+    uvTransform: {x: 228, y: 873}
     spritePosition: {x: 118, y: 108}
+  - name: Earth_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 735
+      width: 17
+      height: 16
+    spriteID: 3065ed32f46a731459bfd38cc2f5791a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 735}
+    spritePosition: {x: 118, y: 108}
+  - name: Venus_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 823
+      width: 17
+      height: 17
+    spriteID: 05ec741bc6103e14ba6f7829d9c6af30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 228, y: 823}
+    spritePosition: {x: 65, y: 79}
+  - name: Venus_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 848
+      width: 17
+      height: 17
+    spriteID: bb06a0dc5d05a4d4fa10d8f97ad86940
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 228, y: 848}
+    spritePosition: {x: 65, y: 79}
   - name: Venus
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -188,8 +496,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 465
-      y: 235
+      x: 261
+      y: 759
       width: 15
       height: 15
     spriteID: 0495e89d9fbe1d44fa1c5dab73d97bd7
@@ -201,20 +509,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 465, y: 235}
+    uvTransform: {x: 261, y: 759}
     spritePosition: {x: 66, y: 80}
-  - name: Mars
+  - name: Venus_d
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 488
-      y: 235
-      width: 13
-      height: 13
-    spriteID: ee783141e9926b3429b698e1832045b6
+      x: 261
+      y: 782
+      width: 15
+      height: 15
+    spriteID: b6683fbfa5075f942bedf586d0422e63
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,8 +531,140 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 488, y: 235}
+    uvTransform: {x: 261, y: 782}
+    spritePosition: {x: 66, y: 80}
+  - name: Mars_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 805
+      width: 15
+      height: 15
+    spriteID: 0005f9328931786478487567489ec77b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 805}
+    spritePosition: {x: 108, y: 60}
+  - name: Mars_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 828
+      width: 15
+      height: 15
+    spriteID: fc7e6ae45d99e5d4394c93a22fa62434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 828}
+    spritePosition: {x: 108, y: 60}
+  - name: Mars
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 872
+      width: 13
+      height: 13
+    spriteID: f760f5b7126ad8143abf9e3b3dfe8e97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 872}
     spritePosition: {x: 109, y: 61}
+  - name: Mars_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 893
+      width: 13
+      height: 13
+    spriteID: 624525834c1c2114ca0f2fb88e6458f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 893}
+    spritePosition: {x: 109, y: 61}
+  - name: Uranus_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 432
+      width: 27
+      height: 31
+    spriteID: 82e058ffad687904eaa56ff618fe1d07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 432}
+    spritePosition: {x: 253, y: 124}
+  - name: Uranus_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 735
+      width: 27
+      height: 31
+    spriteID: ca7100e02643bcf4c83d2d335cc3e5a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 193, y: 735}
+    spritePosition: {x: 253, y: 124}
   - name: Uranus
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -232,8 +672,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 367
+      x: 193
+      y: 774
       width: 25
       height: 29
     spriteID: 8a361665ff1cd6c4f863c6f8ed933332
@@ -245,20 +685,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 367}
-    spritePosition: {x: 254, y: 50}
-  - name: Neptune
+    uvTransform: {x: 193, y: 774}
+    spritePosition: {x: 254, y: 125}
+  - name: Uranus_d
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 348
-      y: 279
+      x: 193
+      y: 811
       width: 25
-      height: 24
-    spriteID: 090746fe4f32ade4da6dcdbe8458ed43
+      height: 29
+    spriteID: 786324edbccd0b243bfa2593e1f36726
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -267,8 +707,140 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 348, y: 279}
+    uvTransform: {x: 193, y: 811}
+    spritePosition: {x: 254, y: 125}
+  - name: Neptune_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 848
+      width: 27
+      height: 26
+    spriteID: e9352e32aa7cf974c9e272d1c497cd58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 193, y: 848}
+    spritePosition: {x: 267, y: 42}
+  - name: Neptune_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 882
+      width: 27
+      height: 26
+    spriteID: e195a8c1f2288284782d8e4232ebb39c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 193, y: 882}
+    spritePosition: {x: 267, y: 42}
+  - name: Neptune
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 400
+      width: 25
+      height: 24
+    spriteID: 3d5fee88a32f06f4f83223698b844a4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 400}
     spritePosition: {x: 268, y: 43}
+  - name: Neptune_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 735
+      width: 25
+      height: 24
+    spriteID: 2e6237e1f13122e4b83fb9e3150b8968
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 228, y: 735}
+    spritePosition: {x: 268, y: 43}
+  - name: Saturn_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 614
+      width: 38
+      height: 27
+    spriteID: f6cbf7a4812ddd54c94c16e58a325410
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 255, y: 614}
+    spritePosition: {x: 215, y: 85}
+  - name: Saturn_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 649
+      width: 38
+      height: 27
+    spriteID: 6bf2d7baae94af1469c63c9b4c03cd49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 255, y: 649}
+    spritePosition: {x: 215, y: 85}
   - name: Saturn
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -276,8 +848,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 279
+      x: 255
+      y: 684
       width: 36
       height: 25
     spriteID: 7886bd8d981efe542b268ab66bac9a9e
@@ -289,8 +861,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 304, y: 279}
+    uvTransform: {x: 255, y: 684}
     spritePosition: {x: 216, y: 86}
+  - name: Saturn_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 367
+      width: 36
+      height: 25
+    spriteID: 7ecedeae1ea993742a871207166623ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 367}
+    spritePosition: {x: 216, y: 86}
+  - name: Jupiter_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 551
+      width: 41
+      height: 41
+    spriteID: 82902f796a4b28a46bd58997777a9aa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 255, y: 551}
+    spritePosition: {x: 160, y: 35}
+  - name: Jupiter_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 677
+      width: 41
+      height: 41
+    spriteID: be9c89e138ee3264a84af750a5fa49f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 193, y: 677}
+    spritePosition: {x: 160, y: 35}
   - name: Jupiter
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -298,8 +936,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 465
-      y: 188
+      x: 195
+      y: 497
       width: 39
       height: 39
     spriteID: 92bbe679b151fe844a1f7d94a736acb2
@@ -311,7 +949,29 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 465, y: 188}
+    uvTransform: {x: 195, y: 497}
+    spritePosition: {x: 161, y: 36}
+  - name: Jupiter_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 242
+      y: 497
+      width: 39
+      height: 39
+    spriteID: b5e68613d1520084195dea833ecd3f12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 242, y: 497}
     spritePosition: {x: 161, y: 36}
   - name: Planet
     originalName: 
@@ -320,8 +980,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 258
+      x: 4
+      y: 919
       width: 130
       height: 13
     spriteID: afca402a21ee44f4297c8bd90ab6424d
@@ -333,9 +993,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 304, y: 258}
+    uvTransform: {x: 4, y: 919}
     spritePosition: {x: 87, y: 155}
-  - name: Asteroid Belt
+  - name: Asteroid Belt_pr
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -344,6 +1004,50 @@ ScriptedImporter:
       serializedVersion: 2
       x: 316
       y: 4
+      width: 183
+      height: 176
+    spriteID: 4f89972d2f0ac0b45be2526aaf5ad54c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 316, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Asteroid Belt_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 367
+      width: 183
+      height: 176
+    spriteID: 756a01a5ccaffd444a2245de077aaca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 367}
+    spritePosition: {x: 0, y: 0}
+  - name: Asteroid Belt
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 551
       width: 179
       height: 176
     spriteID: 8d955999d4f4a7b449703b6e1f8364c6
@@ -355,7 +1059,29 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 316, y: 4}
+    uvTransform: {x: 4, y: 551}
+    spritePosition: {x: 1, y: 0}
+  - name: Asteroid Belt_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 735
+      width: 181
+      height: 176
+    spriteID: 6114e7a99613cfd46850d553635a3bb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 735}
     spritePosition: {x: 1, y: 0}
   - name: AstroParrot
     originalName: 
@@ -364,8 +1090,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 381
-      y: 279
+      x: 228
+      y: 767
       width: 19
       height: 22
     spriteID: 21682814f417d6c4bad4728a115fbc98
@@ -377,7 +1103,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 381, y: 279}
+    uvTransform: {x: 228, y: 767}
     spritePosition: {x: 15, y: 39}
   - name: Stars
     originalName: 
@@ -497,13 +1223,63 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Mercury_pr
+    spriteName: Mercury_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd4b26513d318174db4882da4bc280f3
+    layerID: 81
+    mosaicPosition: {x: 228, y: 897}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mercury_on
+    spriteName: Mercury_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 78e3178e731204b4982e82da7d83592d
+    layerID: 80
+    mosaicPosition: {x: 261, y: 851}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Mercury
     spriteName: Mercury
     isGroup: 0
     parentIndex: -1
-    spriteID: 3d119eef654532d46a4abaa8da5f0933
+    spriteID: 996e0cdec02027f4fa6e688497c37214
     layerID: 31
-    mosaicPosition: {x: 304, y: 188}
+    mosaicPosition: {x: 284, y: 759}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mercury_d
+    spriteName: Mercury_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4e9a6bd7b7aba804ea8c421619281732
+    layerID: 89
+    mosaicPosition: {x: 284, y: 782}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sun_pr
+    spriteName: Sun_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c375553028a4c6748835b3c330a9ca86
+    layerID: 79
+    mosaicPosition: {x: 195, y: 367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sun_on
+    spriteName: Sun_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0fae931ec7be63428676fc27d1c4ef4
+    layerID: 78
+    mosaicPosition: {x: 195, y: 432}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -513,7 +1289,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 1b78b3b126595984db7f3178fbd7362f
     layerID: 30
-    mosaicPosition: {x: 403, y: 188}
+    mosaicPosition: {x: 193, y: 551}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sun_d
+    spriteName: Sun_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c186ab14221f954438ba8ec5753ca164
+    layerID: 91
+    mosaicPosition: {x: 193, y: 614}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Moon_pr
+    spriteName: Moon_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a828a2523abe3c243bf5c45fd7d043d0
+    layerID: 77
+    mosaicPosition: {x: 284, y: 805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Moon_on
+    spriteName: Moon_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43467c10f6f65994db36adef5586a625
+    layerID: 76
+    mosaicPosition: {x: 284, y: 828}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -523,7 +1329,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3d3184ddb88a80f419746353d690ac19
     layerID: 47
-    mosaicPosition: {x: 442, y: 258}
+    mosaicPosition: {x: 286, y: 735}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Moon_d
+    spriteName: Moon_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3630d4a87e9a4dc4290f84ef6b903bfb
+    layerID: 92
+    mosaicPosition: {x: 286, y: 471}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Earth_pr
+    spriteName: Earth_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0ca7b034363831b418176e44e6a22372
+    layerID: 75
+    mosaicPosition: {x: 259, y: 471}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Earth_on
+    spriteName: Earth_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fc27cbea0d62d814dadffc4e1af3566e
+    layerID: 74
+    mosaicPosition: {x: 228, y: 797}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -533,7 +1369,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b10f142c4304fa44085dc9982db79c98
     layerID: 34
-    mosaicPosition: {x: 408, y: 279}
+    mosaicPosition: {x: 228, y: 873}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Earth_d
+    spriteName: Earth_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3065ed32f46a731459bfd38cc2f5791a
+    layerID: 96
+    mosaicPosition: {x: 261, y: 735}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Venus_pr
+    spriteName: Venus_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05ec741bc6103e14ba6f7829d9c6af30
+    layerID: 73
+    mosaicPosition: {x: 228, y: 823}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Venus_on
+    spriteName: Venus_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb06a0dc5d05a4d4fa10d8f97ad86940
+    layerID: 72
+    mosaicPosition: {x: 228, y: 848}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -543,7 +1409,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 0495e89d9fbe1d44fa1c5dab73d97bd7
     layerID: 32
-    mosaicPosition: {x: 465, y: 235}
+    mosaicPosition: {x: 261, y: 759}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Venus_d
+    spriteName: Venus_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6683fbfa5075f942bedf586d0422e63
+    layerID: 98
+    mosaicPosition: {x: 261, y: 782}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mars_pr
+    spriteName: Mars_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0005f9328931786478487567489ec77b
+    layerID: 104
+    mosaicPosition: {x: 261, y: 805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mars_on
+    spriteName: Mars_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fc7e6ae45d99e5d4394c93a22fa62434
+    layerID: 105
+    mosaicPosition: {x: 261, y: 828}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -551,9 +1447,39 @@ ScriptedImporter:
     spriteName: Mars
     isGroup: 0
     parentIndex: -1
-    spriteID: ee783141e9926b3429b698e1832045b6
-    layerID: 33
-    mosaicPosition: {x: 488, y: 235}
+    spriteID: f760f5b7126ad8143abf9e3b3dfe8e97
+    layerID: 102
+    mosaicPosition: {x: 261, y: 872}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mars_d
+    spriteName: Mars_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 624525834c1c2114ca0f2fb88e6458f1
+    layerID: 101
+    mosaicPosition: {x: 261, y: 893}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Uranus_pr
+    spriteName: Uranus_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 82e058ffad687904eaa56ff618fe1d07
+    layerID: 69
+    mosaicPosition: {x: 259, y: 432}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Uranus_on
+    spriteName: Uranus_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ca7100e02643bcf4c83d2d335cc3e5a6
+    layerID: 68
+    mosaicPosition: {x: 193, y: 735}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -563,7 +1489,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8a361665ff1cd6c4f863c6f8ed933332
     layerID: 42
-    mosaicPosition: {x: 4, y: 367}
+    mosaicPosition: {x: 193, y: 774}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Uranus_d
+    spriteName: Uranus_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 786324edbccd0b243bfa2593e1f36726
+    layerID: 106
+    mosaicPosition: {x: 193, y: 811}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Neptune_pr
+    spriteName: Neptune_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e9352e32aa7cf974c9e272d1c497cd58
+    layerID: 67
+    mosaicPosition: {x: 193, y: 848}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Neptune_on
+    spriteName: Neptune_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e195a8c1f2288284782d8e4232ebb39c
+    layerID: 66
+    mosaicPosition: {x: 193, y: 882}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -571,9 +1527,39 @@ ScriptedImporter:
     spriteName: Neptune
     isGroup: 0
     parentIndex: -1
-    spriteID: 090746fe4f32ade4da6dcdbe8458ed43
-    layerID: 40
-    mosaicPosition: {x: 348, y: 279}
+    spriteID: 3d5fee88a32f06f4f83223698b844a4b
+    layerID: 65
+    mosaicPosition: {x: 259, y: 400}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Neptune_d
+    spriteName: Neptune_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e6237e1f13122e4b83fb9e3150b8968
+    layerID: 109
+    mosaicPosition: {x: 228, y: 735}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Saturn_pr
+    spriteName: Saturn_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f6cbf7a4812ddd54c94c16e58a325410
+    layerID: 57
+    mosaicPosition: {x: 255, y: 614}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Saturn_on
+    spriteName: Saturn_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6bf2d7baae94af1469c63c9b4c03cd49
+    layerID: 56
+    mosaicPosition: {x: 255, y: 649}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -583,7 +1569,37 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7886bd8d981efe542b268ab66bac9a9e
     layerID: 37
-    mosaicPosition: {x: 304, y: 279}
+    mosaicPosition: {x: 255, y: 684}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Saturn_d
+    spriteName: Saturn_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7ecedeae1ea993742a871207166623ed
+    layerID: 110
+    mosaicPosition: {x: 259, y: 367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jupiter_pr
+    spriteName: Jupiter_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 82902f796a4b28a46bd58997777a9aa8
+    layerID: 55
+    mosaicPosition: {x: 255, y: 551}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jupiter_on
+    spriteName: Jupiter_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be9c89e138ee3264a84af750a5fa49f0
+    layerID: 54
+    mosaicPosition: {x: 193, y: 677}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -593,7 +1609,17 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 92bbe679b151fe844a1f7d94a736acb2
     layerID: 35
-    mosaicPosition: {x: 465, y: 188}
+    mosaicPosition: {x: 195, y: 497}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jupiter_d
+    spriteName: Jupiter_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5e68613d1520084195dea833ecd3f12
+    layerID: 112
+    mosaicPosition: {x: 242, y: 497}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -603,7 +1629,27 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: afca402a21ee44f4297c8bd90ab6424d
     layerID: 5
-    mosaicPosition: {x: 304, y: 258}
+    mosaicPosition: {x: 4, y: 919}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Asteroid Belt_pr
+    spriteName: Asteroid Belt_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4f89972d2f0ac0b45be2526aaf5ad54c
+    layerID: 53
+    mosaicPosition: {x: 316, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Asteroid Belt_on
+    spriteName: Asteroid Belt_on
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 756a01a5ccaffd444a2245de077aaca2
+    layerID: 52
+    mosaicPosition: {x: 4, y: 367}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -613,7 +1659,17 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8d955999d4f4a7b449703b6e1f8364c6
     layerID: 49
-    mosaicPosition: {x: 316, y: 4}
+    mosaicPosition: {x: 4, y: 551}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Asteroid Belt_d
+    spriteName: Asteroid Belt_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6114e7a99613cfd46850d553635a3bb4
+    layerID: 114
+    mosaicPosition: {x: 4, y: 735}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -633,7 +1689,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 21682814f417d6c4bad4728a115fbc98
     layerID: 44
-    mosaicPosition: {x: 381, y: 279}
+    mosaicPosition: {x: 228, y: 767}
     flatten: 0
     isImported: 1
     isVisible: 1
