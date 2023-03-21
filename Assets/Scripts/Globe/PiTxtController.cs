@@ -6,6 +6,7 @@ public class PiTxtController : MonoBehaviour
 {
     public TMP_Text askText;
     public TMP_Text feedbackText;
+    public ProgressBar progressBar;
     private List<string> pieces = new List<string>();
     private List<string> usedPieces = new List<string>();
     private System.Random rnd = new System.Random();
@@ -46,9 +47,9 @@ public class PiTxtController : MonoBehaviour
         if(!thelast){
             feedbackText.text = pos_messages[Mathf.Min(pos_streak, pos_messages.Length - 1)];            
             pos_streak++;
-            ProgressBar.AddCurrent();
+            progressBar.AddCurrent();
         }else{
-            feedbackText.text = "Next time";
+            feedbackText.text = "Next time!";
         }
         thelast = false;
         neg_streak = 0;
@@ -71,7 +72,7 @@ public class PiTxtController : MonoBehaviour
         }else{
             feedbackText.text = neg_messages[Mathf.Min(neg_streak-1, neg_messages.Length - 1)];
         }
-        ProgressBar.MinusCurrent();
+        progressBar.MinusCurrent();
         PieceController.DisableAll();
         yield return new WaitForSeconds(1.5f);
         PieceController.EnableWhite();
@@ -80,9 +81,9 @@ public class PiTxtController : MonoBehaviour
     {
         feedbackText.text = "Great Job";
         PieceController.DisableAll();
-        ProgressBar.AddCurrent();
+        progressBar.AddCurrent();
         yield return new WaitForSeconds(1.5f);
-        int m = ProgressBar.CompleteOrReset();
+        int m = progressBar.CompleteOrReset();
         if(m == 0){
             feedbackText.text = "Need All";
         }else if(m == 1){

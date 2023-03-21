@@ -87,19 +87,19 @@ public class ProgressBar : MonoBehaviour
         TrophyController.ShowTrophy(trophyName);
     }
 
-    public static void AddCurrent()
+    public void AddCurrent()
     {
         targetProg += 1;
     }
 
-    public static void MinusCurrent()
+    public void MinusCurrent()
     {
         if(targetProg != 0){  
             targetProg -= 1;
         }
     } 
 
-    public static int CompleteOrReset()
+    public int CompleteOrReset()
     {
         if(currentState == ProgState.Prog3){
             targetProg = 0;
