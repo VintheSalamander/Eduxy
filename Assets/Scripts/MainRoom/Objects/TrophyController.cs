@@ -5,21 +5,31 @@ using UnityEngine.SceneManagement;
 
 public static class TrophyController
 {
-    private static bool Globe = false;
-    private static bool HumanBody = false;
-    private static bool SolarSystem = false;
-
-    public static void ShowTrophy(string name){
-        if(name == "Globe"){
-            Globe = true;
-        }else if(name == "HumanBody"){
-            HumanBody = true;
-        }else if(name == "SolarSystem"){
-            SolarSystem = true;
-        }
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void OnBeforeSceneLoad()
+    {
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
     }
 
-    public static bool GetTrophyStatus(string checkT){
+    static void OnActiveSceneChanged(Scene previousScene, Scene newScene){
+        int previousSceneBuildIndex = UIController.GetPreviousSceneIndex();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.buildIndex == 1 | currentScene.buildIndex == 0)
+        {
+            if(previousSceneBuildIndex == 2){
+                Globe = ProgressBar.GetCurrentState();
+            }else if(previousSceneBuildIndex == 3){
+                HumanBody = ProgressBar.GetCurrentState();
+            }else if(previousSceneBuildIndex == 4){
+                SolarSystem = ProgressBar.GetCurrentState();
+            }
+        }
+    }
+    private static ProgressBar.ProgState Globe = ProgressBar.ProgState.Prog1;
+    private static ProgressBar.ProgState HumanBody = ProgressBar.ProgState.Prog1;
+    private static ProgressBar.ProgState SolarSystem = ProgressBar.ProgState.Prog1;
+
+    public static ProgressBar.ProgState GetTrophyStatus(string checkT){
         if(checkT == "Globe"){
             return Globe;
         }else if(checkT == "HumanBody"){
@@ -27,6 +37,16 @@ public static class TrophyController
         }else if(checkT == "SolarSystem"){
             return SolarSystem;
         }
-        return false;
+        return ProgressBar.ProgState.Prog1;
+    }
+    public static ProgressBar.ProgState LoadProgState(string nameT){
+        if(nameT == "Globe"){
+            return Globe;
+        }else if(nameT == "HumanBody"){
+            return HumanBody;
+        }else if(nameT == "SolarSystem"){
+            return SolarSystem;
+        }
+        return ProgressBar.ProgState.Prog1;
     }
 }

@@ -12,7 +12,7 @@ public static class PieceController
     }
 
     static void OnActiveSceneChanged(Scene previousScene, Scene newScene){
-        if (newScene.buildIndex == 2)
+        if (newScene.buildIndex == 2 | newScene.buildIndex == 4)
         {
             PieceList = new List<Piece>();
             pieces_names = new List<string>();

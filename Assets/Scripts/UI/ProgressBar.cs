@@ -27,6 +27,7 @@ public class ProgressBar : MonoBehaviour
         targetProg = 0;
         star.SetActive(false);
         home.SetActive(false);
+        currentState = TrophyController.LoadProgState(trophyName);
         if(currentState == ProgState.Prog1){
             bar1.fillAmount = 0;
             bar2.fillAmount = 0;
@@ -84,7 +85,6 @@ public class ProgressBar : MonoBehaviour
     void StarReached(){
         star.SetActive(true);
         home.SetActive(true);
-        TrophyController.ShowTrophy(trophyName);
     }
 
     public void AddCurrent()
@@ -110,4 +110,7 @@ public class ProgressBar : MonoBehaviour
         return 2;
     }
 
+    public static ProgState GetCurrentState(){
+        return currentState;
+    }
 }

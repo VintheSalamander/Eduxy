@@ -7,7 +7,7 @@ public class Trophy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(TrophyController.GetTrophyStatus(this.name)){
+        if(TrophyController.GetTrophyStatus(this.name) == ProgressBar.ProgState.Star){
             gameObject.SetActive(true);
         }else{
             gameObject.SetActive(false);

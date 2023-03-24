@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public bool paused;
     public GameObject PauseMenu;
     public GameObject pauseBut;
+    private static int previousSceneBuildIndex;
 
     // Update is called once per frame
     void Update()
@@ -34,11 +35,17 @@ public class UIController : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1f;
+        previousSceneBuildIndex = SceneManager.GetActiveScene().buildIndex; 
         SceneManager.LoadScene(0);
     }
     public void Home()
     {
         Time.timeScale = 1f;
+        previousSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(1);
+    }
+
+    public static int GetPreviousSceneIndex(){
+        return previousSceneBuildIndex;
     }
 }
