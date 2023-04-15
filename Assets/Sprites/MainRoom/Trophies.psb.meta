@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64a055617e73b2b4196100c0c1b5c23e
+guid: da1e7a73ce69605428f8bd5edbb62cfa
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Statue_on
+  - name: Continents Trophy
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 17
-    spriteID: bb1b486341638f947b7e973390047f5e
+      width: 20
+      height: 19
+    spriteID: cd4e367d814a8d74eae69e3b6b715d9a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,7 +114,51 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 3, y: 1}
+    spritePosition: {x: 0, y: 0}
+  - name: SolarSystem Trophy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 31
+      width: 20
+      height: 19
+    spriteID: ba2aef7dfcf424242b5798004ac52cc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 31}
+    spritePosition: {x: 0, y: 0}
+  - name: HumanBody Trophy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 4
+      width: 20
+      height: 19
+    spriteID: 0fed01f214ad1be4ea4e7b10a3cbc466
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 32, y: 4}
+    spritePosition: {x: 0, y: 0}
   characterData:
     bones: []
     parts: []
@@ -189,36 +233,36 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Statue_on
-    spriteName: Statue_on
+  - name: Continents Trophy
+    spriteName: Continents Trophy
     isGroup: 0
     parentIndex: -1
-    spriteID: bb1b486341638f947b7e973390047f5e
-    layerID: 4
+    spriteID: cd4e367d814a8d74eae69e3b6b715d9a
+    layerID: 5
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Capa 1
-    spriteName: Capa 1
+  - name: SolarSystem Trophy
+    spriteName: SolarSystem Trophy
     isGroup: 0
     parentIndex: -1
-    spriteID: 89b94649e5c87ad4ab71d00fdf0ee895
-    layerID: 5
-    mosaicPosition: {x: 4, y: 27}
+    spriteID: ba2aef7dfcf424242b5798004ac52cc4
+    layerID: 4
+    mosaicPosition: {x: 4, y: 31}
     flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Statue
-    spriteName: Statue
+    isImported: 1
+    isVisible: 1
+  - name: HumanBody Trophy
+    spriteName: HumanBody Trophy
     isGroup: 0
     parentIndex: -1
-    spriteID: d2c6985af8384194f9c9c414286a993a
+    spriteID: 0fed01f214ad1be4ea4e7b10a3cbc466
     layerID: 2
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 32, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   generateGOHierarchy: 0

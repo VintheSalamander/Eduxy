@@ -39,14 +39,4 @@ public static class TrophyController
         }
         return ProgressBar.ProgState.Prog1;
     }
-    public static ProgressBar.ProgState LoadProgState(string nameT){
-        if(nameT == "Globe"){
-            return Globe;
-        }else if(nameT == "HumanBody"){
-            return HumanBody;
-        }else if(nameT == "SolarSystem"){
-            return SolarSystem;
-        }
-        return ProgressBar.ProgState.Prog1;
-    }
 }

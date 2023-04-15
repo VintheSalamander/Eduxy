@@ -86,9 +86,4 @@ public class PuzTxtController : MonoBehaviour
         PuzzleController.UnlockAll();
     }
 
-
-    public int GetNegStreak()
-    {
-        return neg_streak;
-    }
 }

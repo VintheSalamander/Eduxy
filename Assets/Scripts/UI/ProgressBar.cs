@@ -27,7 +27,7 @@ public class ProgressBar : MonoBehaviour
         targetProg = 0;
         star.SetActive(false);
         home.SetActive(false);
-        currentState = TrophyController.LoadProgState(trophyName);
+        currentState = TrophyController.GetTrophyStatus(trophyName);
         if(currentState == ProgState.Prog1){
             bar1.fillAmount = 0;
             bar2.fillAmount = 0;

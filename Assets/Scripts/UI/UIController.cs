@@ -9,7 +9,9 @@ public class UIController : MonoBehaviour
     public bool paused;
     public GameObject PauseMenu;
     public GameObject pauseBut;
+    public GameObject openE;
     private static int previousSceneBuildIndex;
+    private bool inrange;
 
     // Update is called once per frame
     void Update()

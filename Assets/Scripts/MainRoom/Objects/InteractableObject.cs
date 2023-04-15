@@ -7,6 +7,7 @@ public class InteractableObject : MonoBehaviour
 {
     public int sceneBuildIndex;
     public Sprite highlightedSprite;
+    public GameObject openE;
     private Sprite basicSprite;
     private bool inRange;
     void Start(){
@@ -28,6 +29,7 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.CompareTag("Player")){
             inRange = true;
+            openE.SetActive(true);
         }
         
     }
@@ -35,6 +37,7 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             inRange = false;
+            openE.SetActive(false);
         }
     }
 

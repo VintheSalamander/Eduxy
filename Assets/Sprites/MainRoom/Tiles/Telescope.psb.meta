@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64a055617e73b2b4196100c0c1b5c23e
+guid: 61d97855744482045b4206b9e8d743cd
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Statue_on
+  - name: Telescope_on
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 17
-    spriteID: bb1b486341638f947b7e973390047f5e
+      width: 18
+      height: 16
+    spriteID: 89582b5cfc3241f41aa712d8cdab0990
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,7 +114,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 3, y: 1}
+    spritePosition: {x: 1, y: 2}
   characterData:
     bones: []
     parts: []
@@ -189,33 +189,43 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Statue_on
-    spriteName: Statue_on
+  - name: Telescope_on
+    spriteName: Telescope_on
     isGroup: 0
     parentIndex: -1
-    spriteID: bb1b486341638f947b7e973390047f5e
-    layerID: 4
+    spriteID: 89582b5cfc3241f41aa712d8cdab0990
+    layerID: 6
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Capa 1
-    spriteName: Capa 1
+  - name: Capa 4
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 89b94649e5c87ad4ab71d00fdf0ee895
-    layerID: 5
-    mosaicPosition: {x: 4, y: 27}
+    spriteID: 206fcca30bb58484aae403a27b567fd3
+    layerID: 7
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Statue
-    spriteName: Statue
+  - name: Capa 2
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: d2c6985af8384194f9c9c414286a993a
+    spriteID: aa5c46cd3c8b8c348b79fe508b6d78c3
+    layerID: 5
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3ca07b0338adfb548b7439076d226887
     layerID: 2
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
