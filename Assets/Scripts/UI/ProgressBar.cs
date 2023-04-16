@@ -18,11 +18,13 @@ public class ProgressBar : MonoBehaviour
     private static ProgState currentState;
     private Image currentBar;
     private float currentProg;
+    private SoundController soundController;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        soundController = GetComponent<SoundController>();
         currentProg = 0;
         targetProg = 0;
         star.SetActive(false);
@@ -85,11 +87,13 @@ public class ProgressBar : MonoBehaviour
     void StarReached(){
         star.SetActive(true);
         home.SetActive(true);
+        soundController.ApplauseSound();
     }
 
     public void AddCurrent()
     {
         targetProg += 1;
+        soundController.CorrectSound();
     }
 
     public void MinusCurrent()
@@ -97,6 +101,7 @@ public class ProgressBar : MonoBehaviour
         if(targetProg != 0){  
             targetProg -= 1;
         }
+        soundController.WrongSound();
     } 
 
     public int CompleteOrReset()

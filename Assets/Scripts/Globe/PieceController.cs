@@ -82,4 +82,8 @@ public static class PieceController
             p.HideText();
         } 
     }
+
+    public static int GetPieceCount(){
+        return PieceList.Count;
+    }
 }

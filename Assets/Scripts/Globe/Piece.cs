@@ -45,7 +45,7 @@ public class Piece : MonoBehaviour
             { 
                 //turn the image green
                 selfImage.color = new Vector4(0f, 1f, 0f, 1f);
-            }else if(neg_streak != 7 - Panel.GetUsedCount()){
+            }else if(neg_streak != PieceController.GetPieceCount() - Panel.GetUsedCount()){
                 //turn the image yellow
                 selfImage.color = new Vector4(1f, 0.92f, 0.016f, 1f);
             }else{

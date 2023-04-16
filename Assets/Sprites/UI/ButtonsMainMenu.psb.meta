@@ -225,7 +225,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 55, y: 47}
     spritePosition: {x: 1, y: 3}
-  - name: Setting
+  - name: Volume
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -233,6 +233,72 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
+      y: 66
+      width: 16
+      height: 16
+    spriteID: 65df00bb770df7e469b195e537c8f1c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 66}
+    spritePosition: {x: 14, y: 1}
+  - name: Volume_on
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 66
+      width: 16
+      height: 15
+    spriteID: aae189dace0b5c44699bd0ddf916924f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 66}
+    spritePosition: {x: 14, y: 1}
+  - name: Volume_pr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 26
+      width: 16
+      height: 13
+    spriteID: 15dc462d0e2784847810091a028d4806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 106, y: 26}
+    spritePosition: {x: 14, y: 2}
+  - name: Mute
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
       y: 66
       width: 16
       height: 16
@@ -245,20 +311,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 66}
+    uvTransform: {x: 28, y: 66}
     spritePosition: {x: 14, y: 1}
-  - name: Setting_on
+  - name: Mute_on
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 28
+      x: 76
       y: 66
       width: 16
       height: 15
-    spriteID: 5d7bdceb136c30849bcbc32c8fb91b89
+    spriteID: dcf98c5e9479ec74ba560b91a1dccd48
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -267,9 +333,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 28, y: 66}
+    uvTransform: {x: 76, y: 66}
     spritePosition: {x: 14, y: 1}
-  - name: Setting_pr
+  - name: Mute_pr
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -277,10 +343,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 106
-      y: 26
+      y: 4
       width: 16
       height: 13
-    spriteID: 90a7a1d2075814a4899d7d8227b894bc
+    spriteID: 26dc9b64f40890c48b88029add527bb5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -289,7 +355,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 106, y: 26}
+    uvTransform: {x: 106, y: 4}
     spritePosition: {x: 14, y: 2}
   characterData:
     bones: []
@@ -425,33 +491,63 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Setting
-    spriteName: Setting
+  - name: Volume
+    spriteName: Volume
     isGroup: 0
     parentIndex: -1
-    spriteID: 7cdc4674b233aab40bf190b136459922
-    layerID: 5
+    spriteID: 65df00bb770df7e469b195e537c8f1c2
+    layerID: 16
     mosaicPosition: {x: 4, y: 66}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Setting_on
-    spriteName: Setting_on
+  - name: Volume_on
+    spriteName: Volume_on
     isGroup: 0
     parentIndex: -1
-    spriteID: 5d7bdceb136c30849bcbc32c8fb91b89
-    layerID: 6
+    spriteID: aae189dace0b5c44699bd0ddf916924f
+    layerID: 17
+    mosaicPosition: {x: 52, y: 66}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Volume_pr
+    spriteName: Volume_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 15dc462d0e2784847810091a028d4806
+    layerID: 18
+    mosaicPosition: {x: 106, y: 26}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mute
+    spriteName: Mute
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7cdc4674b233aab40bf190b136459922
+    layerID: 5
     mosaicPosition: {x: 28, y: 66}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Setting_pr
-    spriteName: Setting_pr
+  - name: Mute_on
+    spriteName: Mute_on
     isGroup: 0
     parentIndex: -1
-    spriteID: 90a7a1d2075814a4899d7d8227b894bc
-    layerID: 7
-    mosaicPosition: {x: 106, y: 26}
+    spriteID: dcf98c5e9479ec74ba560b91a1dccd48
+    layerID: 21
+    mosaicPosition: {x: 76, y: 66}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mute_pr
+    spriteName: Mute_pr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 26dc9b64f40890c48b88029add527bb5
+    layerID: 22
+    mosaicPosition: {x: 106, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

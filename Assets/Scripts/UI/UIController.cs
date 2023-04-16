@@ -7,11 +7,21 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     public bool paused;
+    public bool muted;
     public GameObject PauseMenu;
     public GameObject pauseBut;
-    public GameObject openE;
+    public GameObject volumeBut;
+    public GameObject muteBut;
     private static int previousSceneBuildIndex;
     private bool inrange;
+    
+    private void Start()
+    {
+        // Retrieve muted state from PlayerPrefs and set initial state
+        muted = PlayerPrefs.GetInt("Muted", 0) == 1;
+        UpdateMuteState();
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -25,8 +35,18 @@ public class UIController : MonoBehaviour
             pauseBut.SetActive(true);
             Time.timeScale = 1f;
         }
+        if(muted){
+            volumeBut.SetActive(false);
+            muteBut.SetActive(true);
+        }else{
+            volumeBut.SetActive(true);
+            muteBut.SetActive(false);
+        }
         if(Input.GetKeyDown(KeyCode.Escape)){
             paused = !paused;
+        }
+        if(inrange){
+
         }
     }
     public void Resume_Pause()
@@ -49,5 +69,17 @@ public class UIController : MonoBehaviour
 
     public static int GetPreviousSceneIndex(){
         return previousSceneBuildIndex;
+    }
+
+    public void Mute_Unmute(){
+        muted = !muted;
+        UpdateMuteState();
+    }
+
+    private void UpdateMuteState()
+    {
+        // Set mute state and store in PlayerPrefs
+        AudioListener.pause = muted;
+        PlayerPrefs.SetInt("Muted", muted ? 1 : 0);
     }
 }
