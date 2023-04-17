@@ -5,10 +5,12 @@ using UnityEngine;
 public class SoundController : MonoBehaviour
 {
     [SerializeField] private AudioClip backgroundClip;
+    [SerializeField] private AudioClip clickClip;
     [SerializeField] private AudioClip correctClip;
     [SerializeField] private AudioClip wrongClip;
     [SerializeField] private AudioClip applauseClip;
     private AudioSource backgroundSound;
+    private AudioSource clickSound;
     private AudioSource correctSound;
     private AudioSource wrongSound;
     private AudioSource applauseSound;
@@ -19,16 +21,21 @@ public class SoundController : MonoBehaviour
         isMuted = PlayerPrefs.GetInt("Muted", 0) == 1;
         AudioSource[] audioSources = GetComponents<AudioSource>();
         backgroundSound = audioSources[0];
-        if(audioSources.Length > 1){
-            correctSound = audioSources[1];
-            wrongSound = audioSources[2];
-            applauseSound = audioSources[3];
+        clickSound = audioSources[1];
+        if(audioSources.Length > 2){
+            correctSound = audioSources[2];
+            wrongSound = audioSources[3];
+            applauseSound = audioSources[4];
         }
 
         // Set up and play background sound in a loop
         backgroundSound.clip = backgroundClip;
         backgroundSound.loop = true;
         backgroundSound.Play();
+    }
+    public void ClickSound()
+    {
+        clickSound.PlayOneShot(clickClip);
     }
 
     public void CorrectSound()

@@ -10,9 +10,11 @@ public class MainMenu : MonoBehaviour
     public GameObject muteBut;
     private static int previousSceneBuildIndex;
     private bool inrange;
+    private SoundController soundController;
     
     private void Start()
     {
+        soundController = GetComponent<SoundController>();
         // Retrieve muted state from PlayerPrefs and set initial state
         muted = PlayerPrefs.GetInt("Muted", 0) == 1;
         UpdateMuteState();
@@ -30,6 +32,7 @@ public class MainMenu : MonoBehaviour
         }
     }
     public void Mute_Unmute(){
+        soundController.ClickSound();
         muted = !muted;
         UpdateMuteState();
     }
@@ -43,10 +46,12 @@ public class MainMenu : MonoBehaviour
 
     public void Home()
     {
+        soundController.ClickSound();
         SceneManager.LoadScene(1);
     }
 
     public void QuitGame(){
+        soundController.ClickSound();
         Application.Quit();
     }
 }

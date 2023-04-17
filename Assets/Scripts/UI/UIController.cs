@@ -12,6 +12,7 @@ public class UIController : MonoBehaviour
     public GameObject pauseBut;
     public GameObject volumeBut;
     public GameObject muteBut;
+    public SoundController soundController;
     private static int previousSceneBuildIndex;
     private bool inrange;
     
@@ -52,16 +53,19 @@ public class UIController : MonoBehaviour
     public void Resume_Pause()
     {
         paused = !paused;
+        soundController.ClickSound();
     }
 
     public void Menu()
     {
+        soundController.ClickSound();
         Time.timeScale = 1f;
         previousSceneBuildIndex = SceneManager.GetActiveScene().buildIndex; 
         SceneManager.LoadScene(0);
     }
     public void Home()
     {
+        soundController.ClickSound();
         Time.timeScale = 1f;
         previousSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(1);
@@ -72,6 +76,7 @@ public class UIController : MonoBehaviour
     }
 
     public void Mute_Unmute(){
+        soundController.ClickSound();
         muted = !muted;
         UpdateMuteState();
     }
