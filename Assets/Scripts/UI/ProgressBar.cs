@@ -65,7 +65,7 @@ public class ProgressBar : MonoBehaviour
     {
         float fillQuantity =  currentProg / maximumProg;
         currentBar.fillAmount = fillQuantity;
-        if(currentProg >= maximumProg-0.05f){
+        if(currentProg >= maximumProg-0.1f){
             currentProg = 0;
             targetProg = 0;
             currentState += 1;
