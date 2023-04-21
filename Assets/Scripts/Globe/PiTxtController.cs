@@ -106,7 +106,7 @@ public class PiTxtController : MonoBehaviour
 
     private IEnumerator SetUp()
     {
-        askText.text = "Continent";
+        askText.text = "Select";
         feedbackText.text = "Welcome";
         yield return new WaitForSeconds(3f);
         pieces = PieceController.GetNames();

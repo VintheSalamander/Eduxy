@@ -46,7 +46,8 @@ public class ProgressBar : MonoBehaviour
             bar3.fillAmount = 0;
             currentBar = bar3;
         }else{
-            StarReached();
+            star.SetActive(true);
+            home.SetActive(true);
         }
     }
 
